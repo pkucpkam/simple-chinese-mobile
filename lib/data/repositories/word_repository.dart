@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:drift/drift.dart';
 
+import '../../core/utils/text_search.dart';
 import '../content/content_models.dart';
 import '../db/app_database.dart';
 import '../models/word.dart';
@@ -41,6 +42,27 @@ class WordRepository {
   }
 
   Future<int> count() => _db.words.count().getSingle();
+
+  /// Chỉ mục tìm kiếm của mọi từ (mọi cấp độ), dựng lại khi nội dung đổi.
+  /// Tìm trong bộ nhớ: vài nghìn từ vẫn tức thì, và xử lý được tiếng Việt
+  /// không dấu mà SQLite LIKE không làm được.
+  Stream<List<SearchEntry<Word>>> watchSearchIndex() =>
+      (_db.select(_db.words)
+            ..orderBy([
+              (t) => OrderingTerm(expression: t.level),
+              (t) => OrderingTerm(expression: t.id),
+            ]))
+          .watch()
+          .map((rows) => [
+                for (final r in rows)
+                  SearchEntry(
+                    value: toWord(r),
+                    hanzi: r.hanzi,
+                    pinyin: r.pinyin,
+                    meaningVi: r.meaningVi,
+                    hanViet: r.hanViet,
+                  ),
+              ]);
 
   static Word toWord(WordRow r) => Word(
         id: r.id,

@@ -165,6 +165,60 @@ abstract final class S {
   static const backToPath = 'Về lộ trình';
   static String xpGained(int xp) => '+$xp XP';
 
+  // Nhắc học
+  static const reminderChannelName = 'Nhắc học hằng ngày';
+  static const reminderChannelDescription = 'Thông báo nhắc bạn ôn tập mỗi ngày';
+  static const reminderTitle = 'Đến giờ học tiếng Trung rồi! 📚';
+  static const reminderBody = 'Ôn vài thẻ để giữ chuỗi ngày học nhé.';
+  static const reminder = 'Nhắc học hằng ngày';
+  static String reminderAt(String t) => 'Lúc $t';
+  static const notificationDenied =
+      'Chưa được phép hiện thông báo. Hãy bật trong Cài đặt của máy.';
+
+  // Hồ sơ
+  static const streak = 'Chuỗi ngày';
+  static String days(int n) => '$n ngày';
+  static String bestStreak(int n) => 'Kỷ lục: $n ngày';
+  static const totalXp = 'Tổng XP';
+  static const wordsStudied = 'Từ đã học';
+  static const activity = 'Hoạt động';
+  static const last7Days = 'XP 7 ngày qua';
+  static const accuracyBySkill = 'Độ chính xác theo kỹ năng';
+  static const noReviewsYet = 'Chưa có lượt ôn nào';
+  static const skillNames = {'read': 'Đọc', 'listen': 'Nghe', 'tone': 'Thanh điệu', 'write': 'Viết'};
+  static String heatmapTooltip(String date, int xp, int reviews) => '$date · $xp XP · $reviews lượt ôn';
+  static const less = 'Ít';
+  static const more = 'Nhiều';
+  static const weekdayShort = ['T2', 'T3', 'T4', 'T5', 'T6', 'T7', 'CN'];
+
+  // Backup
+  static const backup = 'Sao lưu';
+  static const backupHint = 'Lưu tiến độ ra file JSON để chuyển máy hoặc phòng mất dữ liệu.';
+  static const exportBackup = 'Xuất file';
+  static const importBackup = 'Nhập file';
+  static String exported(String name) => 'Đã lưu $name';
+  static String imported(int n) => 'Đã khôi phục $n thẻ';
+  static const importConfirmTitle = 'Khôi phục từ backup?';
+  static const importConfirmBody =
+      'Toàn bộ tiến độ hiện tại sẽ được thay bằng dữ liệu trong file. Không thể hoàn tác.';
+  static const restore = 'Khôi phục';
+  static const cancel = 'Huỷ';
+
+  // Onboarding
+  static const welcomeTitle = 'Chào mừng đến Simple Chinese';
+  static const welcomeBody =
+      'Học tiếng Trung HSK1 từ con số 0: phát âm, chữ Hán, từ vựng và hội thoại. '
+      'Chạy hoàn toàn offline — dữ liệu chỉ nằm trên máy bạn.';
+  static const goalTitle = 'Mục tiêu mỗi ngày';
+  static const goalBody = 'Bạn muốn học bao nhiêu thẻ mới mỗi ngày? Có thể đổi sau trong tab Tôi.';
+  static const goalOptions = {5: 'Nhẹ nhàng', 10: 'Vừa phải', 20: 'Chăm chỉ'};
+  static String cardsPerDay(int n) => '$n thẻ mới / ngày';
+  static const reminderTitleOnboarding = 'Nhắc học';
+  static const reminderBodyOnboarding = 'Học đều mỗi ngày quan trọng hơn học nhiều một lúc.';
+  static const pickTime = 'Chọn giờ';
+  static const skip = 'Bỏ qua';
+  static const getStarted = 'Bắt đầu học';
+
   // Cài đặt học
   static const studySettings = 'Học tập';
   static const dailyNewLimit = 'Thẻ mới mỗi ngày';
@@ -179,7 +233,9 @@ abstract final class S {
 
   // Tra cứu
   static const dictionaryTitle = 'Tra cứu';
-  static const searchHint = 'Tìm chữ Hán, pinyin hoặc tiếng Việt';
+  static const searchHint = 'Chữ Hán, pinyin hoặc tiếng Việt';
+  static String resultCount(int n) => '$n kết quả';
+  static String noResults(String q) => 'Không tìm thấy "$q"';
 
   // Chi tiết từ
   static const hanViet = 'Hán Việt';

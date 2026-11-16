@@ -93,7 +93,7 @@ class _WordDetailBodyState extends ConsumerState<_WordDetailBody> {
           ),
         ),
         const SizedBox(height: 12),
-        _AddToDeckButton(wordId: w.id),
+        _AddToDeckButton(word: w),
         const SizedBox(height: 8),
         SizedBox(
           width: double.infinity,
@@ -254,13 +254,13 @@ class _ExampleCard extends StatelessWidget {
 }
 
 class _AddToDeckButton extends ConsumerWidget {
-  const _AddToDeckButton({required this.wordId});
+  const _AddToDeckButton({required this.word});
 
-  final String wordId;
+  final Word word;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final inDeck = ref.watch(inDeckProvider(wordId)).value ?? false;
+    final inDeck = ref.watch(inDeckProvider(word.id)).value ?? false;
     return SizedBox(
       width: double.infinity,
       child: inDeck
@@ -272,7 +272,7 @@ class _AddToDeckButton extends ConsumerWidget {
           : FilledButton.icon(
               onPressed: () async {
                 Haptics.correct();
-                await ref.read(srsRepositoryProvider).addWords([wordId]);
+                await ref.read(srsRepositoryProvider).addWordsForStudy([word]);
               },
               icon: const Icon(Icons.add_rounded),
               label: const Text(S.addToDeck),

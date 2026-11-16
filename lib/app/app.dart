@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../core/widgets/async_value_view.dart';
 import '../core/widgets/hanzi_text.dart';
 import '../data/providers.dart';
+import '../features/onboarding/onboarding_screen.dart';
+import '../features/profile/profile_providers.dart';
 import 'router.dart';
 import 'strings.dart';
 import 'theme/app_theme.dart';
@@ -21,6 +24,9 @@ class SimpleChineseApp extends ConsumerWidget {
       theme: AppTheme.light(),
       darkTheme: AppTheme.dark(),
       themeMode: themeMode,
+      locale: const Locale('vi'),
+      supportedLocales: const [Locale('vi')],
+      localizationsDelegates: GlobalMaterialLocalizations.delegates,
       routerConfig: ref.watch(routerProvider),
       // Chặn UI cho tới khi import nội dung xong (lần đầu mở app).
       builder: (context, child) => _ContentGate(child: child!),
@@ -36,7 +42,20 @@ class _ContentGate extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final bootstrap = ref.watch(contentBootstrapProvider);
-    if (bootstrap.hasValue) return child;
+    if (bootstrap.hasValue) {
+      // Khởi tạo lịch nhắc học (hẹn lại nếu đang bật).
+      ref.watch(reminderControllerProvider);
+      final onboarded = ref.watch(onboardingDoneProvider);
+      return switch (onboarded) {
+        AsyncData(value: true) => child,
+        // Navigator riêng: onboarding nằm phía trên router nên cần Navigator
+        // để mở hộp thoại (chọn giờ).
+        AsyncData(value: false) => Navigator(
+            onGenerateRoute: (_) => MaterialPageRoute(builder: (_) => const OnboardingScreen()),
+          ),
+        _ => const Material(child: _Splash()),
+      };
+    }
     return Material(
       child: bootstrap.hasError
           ? AsyncValueView(

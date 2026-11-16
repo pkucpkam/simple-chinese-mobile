@@ -5,6 +5,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:simple_chinese/app/app.dart';
 import 'package:simple_chinese/data/db/app_database.dart';
 import 'package:simple_chinese/data/providers.dart';
+import 'package:simple_chinese/data/repositories/settings_repository.dart';
 
 /// Cho I/O thật (asset, SQLite) chạy rồi vẽ lại khung hình. Không dùng
 /// pumpAndSettle vì query drift chỉ hoàn tất ngoài fake-async.
@@ -25,6 +26,18 @@ void main() {
 
     // Import chạy trên asset thật (rootBundle) → chờ xong.
     await settle(tester);
+
+    // Lần đầu mở: onboarding → chọn mục tiêu 20 thẻ → bỏ qua nhắc học.
+    expect(find.text('Chào mừng đến Simple Chinese'), findsOneWidget);
+    await tester.tap(find.text('Tiếp'));
+    await settle(tester);
+    await tester.tap(find.text('Chăm chỉ'));
+    await tester.tap(find.text('Tiếp'));
+    await settle(tester);
+    await tester.tap(find.text('Bỏ qua'));
+    await settle(tester);
+    final limit = await tester.runAsync(() => SettingsRepository(db).dailyNewLimit());
+    expect(limit, 20);
 
     // Tab Học: lộ trình, bài 1 mở (hiện tên), bài 2 khoá.
     expect(find.text('Lộ trình HSK 1'), findsOneWidget);
