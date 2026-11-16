@@ -6,5 +6,8 @@ abstract final class Routes {
   static const me = '/me';
 
   static const wordPattern = '/word/:id';
+
+  static const sessionPattern = '/session/:mode';
+  static String session(String mode) => '/session/$mode';
   static String word(String id) => '/word/$id';
 }

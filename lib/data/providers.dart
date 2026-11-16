@@ -6,6 +6,7 @@ import 'content/content_source.dart';
 import 'db/app_database.dart';
 import 'repositories/lesson_repository.dart';
 import 'repositories/settings_repository.dart';
+import 'repositories/srs_repository.dart';
 import 'repositories/word_repository.dart';
 
 part 'providers.g.dart';
@@ -37,3 +38,9 @@ LessonRepository lessonRepository(Ref ref) =>
 @Riverpod(keepAlive: true)
 SettingsRepository settingsRepository(Ref ref) =>
     SettingsRepository(ref.watch(appDatabaseProvider));
+
+@Riverpod(keepAlive: true)
+SrsRepository srsRepository(Ref ref) => SrsRepository(
+      ref.watch(appDatabaseProvider),
+      ref.watch(settingsRepositoryProvider),
+    );

@@ -52,6 +52,17 @@ Pinyin có dấu, **tách từng âm tiết bằng dấu cách**: `"lǎo shī"`,
 Nhờ vậy UI tô màu được theo thanh điệu từng âm tiết. Thanh điệu viết theo cách đọc
 trong sách giáo khoa (`bú shì`, `yí ge`).
 
+## Ôn tập (SRS)
+
+- Lịch ôn theo FSRS (package `fsrs`), bọc trong `lib/data/srs/srs_scheduler.dart`.
+- Mỗi từ thêm vào bộ thẻ tạo 2 thẻ: **đọc** và **nghe**. Thẻ nghe chỉ mở từ ngày
+  hôm sau khi đã học thẻ đọc, để không dồn nhiều thẻ của cùng một từ vào một ngày.
+- Giới hạn thẻ mới mỗi ngày chỉnh trong tab Tôi (mặc định 10).
+- Dạng bài chọn theo stability (`exercise_selector.dart`): thẻ mới → flashcard,
+  yếu → trắc nghiệm nghĩa, trung bình → ghép cặp, mạnh → gõ pinyin; thẻ nghe →
+  nghe chọn chữ. Chấm tự động: sai = Again, đúng nhưng > 8 giây = Hard, đúng nhanh = Good.
+- Bản debug có mục **Công cụ dev** trong tab Tôi để tua thời gian, dùng để thử lịch ôn.
+
 ## Font
 
 Font CJK gốc 18–25MB nên được subset về ASCII + Latin (pinyin) + 6763 chữ GB2312 bằng

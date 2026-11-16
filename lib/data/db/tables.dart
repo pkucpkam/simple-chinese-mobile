@@ -9,6 +9,10 @@
 // nên import lại nội dung không làm mất tiến độ.
 import 'package:drift/drift.dart';
 
+import '../models/srs_card.dart' show CardSkill;
+
+export '../models/srs_card.dart' show CardSkill;
+
 // ---------------------------------------------------------------- Nội dung
 
 @DataClassName('WordRow')
@@ -74,9 +78,6 @@ class ContentVersions extends Table {
 
 // ---------------------------------------------------------------- Tiến độ
 
-/// Kỹ năng của một thẻ. Mỗi từ có thể có nhiều thẻ (mỗi kỹ năng một thẻ).
-enum CardSkill { read, listen, tone, write }
-
 @DataClassName('CardRow')
 class Cards extends Table {
   IntColumn get id => integer().autoIncrement()();
@@ -91,7 +92,7 @@ class Cards extends Table {
   RealColumn get difficulty => real().withDefault(const Constant(0))();
   DateTimeColumn get due => dateTime()();
 
-  /// Trạng thái FSRS: 0 new, 1 learning, 2 review, 3 relearning.
+  /// Xem [CardState]: 0 chưa học, 1 learning, 2 review, 3 relearning.
   IntColumn get state => integer().withDefault(const Constant(0))();
   IntColumn get step => integer().nullable()();
   IntColumn get reps => integer().withDefault(const Constant(0))();

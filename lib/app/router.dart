@@ -7,6 +7,8 @@ import '../features/dictionary/word_detail_screen.dart';
 import '../features/path/path_screen.dart';
 import '../features/profile/profile_screen.dart';
 import '../features/review/review_screen.dart';
+import '../features/review/review_session_screen.dart';
+import '../features/review/session/session_builder.dart';
 import 'routes.dart';
 import 'strings.dart';
 
@@ -47,6 +49,13 @@ GoRouter router(Ref ref) {
         path: Routes.wordPattern,
         builder: (_, state) =>
             WordDetailScreen(wordId: state.pathParameters['id']!),
+      ),
+      GoRoute(
+        parentNavigatorKey: _rootKey,
+        path: Routes.sessionPattern,
+        builder: (_, state) => ReviewSessionScreen(
+          mode: SessionMode.values.byName(state.pathParameters['mode']!),
+        ),
       ),
     ],
   );

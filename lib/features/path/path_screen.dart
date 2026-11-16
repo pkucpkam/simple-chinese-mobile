@@ -7,6 +7,7 @@ import '../../app/strings.dart';
 import '../../core/widgets/async_value_view.dart';
 import '../../core/widgets/hanzi_text.dart';
 import '../../data/models/lesson.dart';
+import '../../data/providers.dart';
 import 'path_providers.dart';
 
 /// Tab "Học". Sprint 0: danh sách bài + từ vựng của bài.
@@ -77,6 +78,25 @@ class _LessonCard extends ConsumerWidget {
               loading: () => const LinearProgressIndicator(),
               error: (e, _) => Text('$e'),
             ),
+            // Tạm thời (Sprint 1): thêm thủ công. Sprint 3 sẽ tự thêm khi học xong bài.
+            if (words.hasValue) ...[
+              const SizedBox(height: 8),
+              Align(
+                alignment: Alignment.centerRight,
+                child: TextButton.icon(
+                  onPressed: () async {
+                    await ref.read(srsRepositoryProvider)
+                        .addWords(words.requireValue.map((w) => w.id));
+                    if (context.mounted) {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                          const SnackBar(content: Text(S.addedToDeck)));
+                    }
+                  },
+                  icon: const Icon(Icons.library_add_rounded),
+                  label: const Text(S.addLessonToDeck),
+                ),
+              ),
+            ],
           ],
         ),
       ),

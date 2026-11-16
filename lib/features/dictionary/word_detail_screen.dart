@@ -4,13 +4,15 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../app/strings.dart';
 import '../../app/theme/app_theme.dart';
-import '../../core/audio/audio_service.dart';
+import '../../core/audio/play_audio.dart';
 import '../../core/utils/haptics.dart';
 import '../../core/widgets/async_value_view.dart';
 import '../../core/widgets/hanzi_text.dart';
 import '../../core/widgets/pinyin_text.dart';
 import '../../data/content/content_models.dart';
 import '../../data/models/word.dart';
+import '../../data/providers.dart';
+import '../review/review_providers.dart';
 import 'word_providers.dart';
 
 /// Màn Chi tiết từ: chữ Hán lớn, pinyin tô màu, Hán Việt, nghĩa, ví dụ.
@@ -49,12 +51,7 @@ class _WordDetailBodyState extends ConsumerState<_WordDetailBody> {
 
   Future<void> _play(String text, {String? asset}) async {
     Haptics.tap();
-    final ok = await ref.read(audioServiceProvider).play(text: text, assetPath: asset);
-    if (!ok && mounted) {
-      ScaffoldMessenger.of(context)
-        ..hideCurrentSnackBar()
-        ..showSnackBar(const SnackBar(content: Text(S.ttsUnavailable)));
-    }
+    await playAudio(ref, context, text: text, assetPath: asset);
   }
 
   @override
@@ -92,6 +89,8 @@ class _WordDetailBodyState extends ConsumerState<_WordDetailBody> {
             ),
           ),
         ),
+        const SizedBox(height: 12),
+        _AddToDeckButton(wordId: w.id),
         const SizedBox(height: 16),
 
         // --- Hán Việt + nghĩa
@@ -238,6 +237,34 @@ class _ExampleCard extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+}
+
+class _AddToDeckButton extends ConsumerWidget {
+  const _AddToDeckButton({required this.wordId});
+
+  final String wordId;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final inDeck = ref.watch(inDeckProvider(wordId)).value ?? false;
+    return SizedBox(
+      width: double.infinity,
+      child: inDeck
+          ? OutlinedButton.icon(
+              onPressed: null,
+              icon: const Icon(Icons.check_rounded),
+              label: const Text(S.inDeck),
+            )
+          : FilledButton.icon(
+              onPressed: () async {
+                Haptics.correct();
+                await ref.read(srsRepositoryProvider).addWords([wordId]);
+              },
+              icon: const Icon(Icons.add_rounded),
+              label: const Text(S.addToDeck),
+            ),
     );
   }
 }

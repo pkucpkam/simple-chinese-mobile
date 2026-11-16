@@ -269,3 +269,44 @@ final class SettingsRepositoryProvider
 
 String _$settingsRepositoryHash() =>
     r'2de17899c89cd144d3e134172002d79d8b2f2dfd';
+
+@ProviderFor(srsRepository)
+final srsRepositoryProvider = SrsRepositoryProvider._();
+
+final class SrsRepositoryProvider
+    extends $FunctionalProvider<SrsRepository, SrsRepository, SrsRepository>
+    with $Provider<SrsRepository> {
+  SrsRepositoryProvider._()
+    : super(
+        from: null,
+        argument: null,
+        retry: null,
+        name: r'srsRepositoryProvider',
+        isAutoDispose: false,
+        dependencies: null,
+        $allTransitiveDependencies: null,
+      );
+
+  @override
+  String debugGetCreateSourceHash() => _$srsRepositoryHash();
+
+  @$internal
+  @override
+  $ProviderElement<SrsRepository> $createElement($ProviderPointer pointer) =>
+      $ProviderElement(pointer);
+
+  @override
+  SrsRepository create(Ref ref) {
+    return srsRepository(ref);
+  }
+
+  /// {@macro riverpod.override_with_value}
+  Override overrideWithValue(SrsRepository value) {
+    return $ProviderOverride(
+      origin: this,
+      providerOverride: $SyncValueProvider<SrsRepository>(value),
+    );
+  }
+}
+
+String _$srsRepositoryHash() => r'2761178fc560b84a496e20bca335ca878f52da5d';
