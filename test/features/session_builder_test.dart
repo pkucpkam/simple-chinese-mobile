@@ -57,13 +57,18 @@ void main() {
       item(2, stability: 1),
       item(3, stability: 30),
       item(4, skill: CardSkill.listen),
+      item(5, skill: CardSkill.tone, w: word(5, pinyin: 'lǎo shī')),
     ], mode: SessionMode.mixed, pool: pool);
     expect(tasks.map((t) => t.type).toList(), [
       ExerciseType.flashcard,
       ExerciseType.meaningChoice,
       ExerciseType.typePinyin,
       ExerciseType.listenChoice,
+      ExerciseType.toneChoice,
     ]);
+    final tone = tasks.last as ToneChoiceTask;
+    expect(tone.options, contains('lǎo shī'));
+    expect(tone.options, hasLength(4));
   });
 
   test('đáp án trắc nghiệm: 4 lựa chọn, chứa đáp án đúng, không trùng nghĩa', () {

@@ -26,8 +26,8 @@ class SrsRepository {
   SrsScheduler get scheduler => _scheduler;
 
   /// Kỹ năng mặc định được tạo khi thêm một từ vào bộ thẻ.
-  /// (Thẻ tone sẽ thêm ở Sprint 2, thẻ write cho từ mustWrite ở Sprint 3.)
-  static const defaultSkills = [CardSkill.read, CardSkill.listen];
+  /// (Thẻ write cho từ mustWrite sẽ thêm ở Sprint 3.)
+  static const defaultSkills = [CardSkill.read, CardSkill.listen, CardSkill.tone];
 
   // ------------------------------------------------------------ Bộ thẻ
 
@@ -122,7 +122,7 @@ class SrsRepository {
     return _attachWords(ordered);
   }
 
-  /// Thẻ mới được phép giới thiệu. Thẻ kỹ năng khác `read` (vd listen) chỉ
+  /// Thẻ mới được phép giới thiệu. Thẻ kỹ năng khác `read` (listen, tone) chỉ
   /// mở sau khi thẻ `read` cùng từ đã được học từ hôm trước — tránh dồn
   /// nhiều thẻ của cùng một từ vào một ngày.
   List<CardRow> _eligibleNew(List<CardRow> all, DateTime now) {

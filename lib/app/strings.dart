@@ -84,6 +84,41 @@ abstract final class S {
   static const quit = 'Dừng';
   static const stay = 'Học tiếp';
 
+  // Phát âm
+  static const pronunciationTitle = 'Luyện phát âm';
+  static const pronunciationSubtitle = 'Bảng pinyin, thanh điệu, âm dễ nhầm, ghi âm';
+  static const pinyinChart = 'Bảng pinyin';
+  static const pinyinChartHint = 'Chạm vào ô để nghe 4 thanh';
+  static const toneDrill = 'Nghe chọn thanh';
+  static const toneDrillHint = 'Nghe một âm tiết, chọn thanh 1–4';
+  static const tonePairDrill = 'Luyện cặp thanh';
+  static const tonePairDrillHint = 'Nghe từ hai âm tiết, chọn đúng cặp thanh';
+  static const confusables = 'Âm dễ nhầm';
+  static const recordCompare = 'Ghi âm & so sánh';
+  static const recordCompareHint = 'Đọc theo mẫu rồi nghe lại giọng mình';
+  static const whichDidYouHear = 'Bạn nghe thấy âm nào?';
+  static const whichTone = 'Thanh mấy?';
+  static const whichTonePair = 'Cặp thanh nào?';
+  static const showHanziHint = 'Không phát được âm — gợi ý chữ Hán:';
+  static String questionOf(int i, int n) => 'Câu $i/$n';
+  static String scoreOf(int c, int n) => 'Đúng $c/$n câu';
+  static const practiceAgain = 'Luyện lại';
+  static const sampleAudio = 'Nghe mẫu';
+  static const myVoice = 'Giọng tôi';
+  static const tapToRecord = 'Chạm để ghi âm';
+  static const recording = 'Đang ghi… chạm để dừng';
+  static const recordFailed =
+      'Không thu được âm thanh. Hãy kiểm tra micro của máy rồi thử lại.';
+  static const micButtonLabel = 'Nút ghi âm';
+  static const micDenied = 'Cần quyền micro để ghi âm. Hãy cấp quyền trong Cài đặt.';
+  static const recordTip =
+      'Nghe mẫu, ghi âm giọng bạn, rồi nghe xen kẽ để so sánh thanh điệu.';
+  static const record = 'Ghi âm';
+  static const tone = 'Thanh';
+  static const chooseToneOf = 'Chọn pinyin đúng cho từ';
+  static const sandhiNote =
+      'Lưu ý: hai thanh 3 đứng liền nhau, thanh 3 đầu đọc thành thanh 2 (nǐ hǎo → ní hǎo).';
+
   // Cài đặt học
   static const studySettings = 'Học tập';
   static const dailyNewLimit = 'Thẻ mới mỗi ngày';

@@ -10,6 +10,7 @@ import '../../data/srs/srs_scheduler.dart';
 import '../flashcard/flashcard_view.dart';
 import 'exercises/choice_exercise.dart';
 import 'exercises/matching_exercise.dart';
+import 'exercises/tone_choice_exercise.dart';
 import 'exercises/type_pinyin_exercise.dart';
 import 'session/review_session_controller.dart';
 import 'session/session_builder.dart';
@@ -98,6 +99,8 @@ class ReviewSessionScreen extends ConsumerWidget {
           },
         ),
       ChoiceTask() => ChoiceExercise(task: task, onGrade: grade, onContinue: next),
+      ToneChoiceTask() =>
+        ToneChoiceExercise(task: task, onGrade: grade, onContinue: next),
       TypePinyinTask() =>
         TypePinyinExercise(task: task, onGrade: grade, onContinue: next),
       MatchingTask() =>

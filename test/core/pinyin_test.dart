@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter_test/flutter_test.dart';
 import 'package:simple_chinese/core/pinyin/pinyin.dart';
 
@@ -100,6 +102,42 @@ void main() {
     test('sai thanh thì không khớp', () {
       expect(numberedAnswerMatches('ni2 hao3', 'nǐ hǎo'), isFalse);
       expect(numberedAnswerMatches('ni hao', 'nǐ hǎo'), isFalse);
+    });
+  });
+
+  group('tonesOf / withTones / toneVariants', () {
+    test('tonesOf', () {
+      expect(tonesOf('lǎo shī'), [3, 1]);
+      expect(tonesOf('xiè xie'), [4, 5]);
+    });
+
+    test('withTones đổi thanh, giữ chữ và dấu câu', () {
+      expect(withTones('lǎo shī', [2, 4]), 'láo shì');
+      expect(withTones('nǚ ér', [1, 3]), 'nǖ ěr');
+      expect(withTones('hǎo!', [4]), 'hào!');
+      expect(withTones('xiè xie', [1, 5]), 'xiē xie');
+    });
+
+    test('toneVariants: đủ số lượng, chứa đáp án, không trùng', () {
+      for (var seed = 0; seed < 30; seed++) {
+        final r = Random(seed);
+        final v = toneVariants('lǎo shī', r.nextInt);
+        expect(v, hasLength(4));
+        expect(v, contains('lǎo shī'));
+        expect(v.toSet(), hasLength(4));
+        // Chữ cái giữ nguyên, chỉ thanh thay đổi.
+        expect(v.map((s) => stripTones(s)).toSet(), {'laoshi'});
+      }
+    });
+
+    test('toneVariants: 1 âm tiết → đủ 4 thanh', () {
+      final v = toneVariants('mā', Random(1).nextInt);
+      expect(v.toSet(), {'mā', 'má', 'mǎ', 'mà'});
+    });
+
+    test('toneVariants: giữ nguyên âm tiết thanh nhẹ', () {
+      final v = toneVariants('mā ma', Random(2).nextInt);
+      expect(v.every((s) => s.endsWith(' ma')), isTrue);
     });
   });
 }

@@ -1,0 +1,77 @@
+{
+  "contentVersion": 1,
+  "tonePairs": [
+    { "hanzi": "飞机", "pinyin": "fēi jī", "vi": "máy bay" },
+    { "hanzi": "今天", "pinyin": "jīn tiān", "vi": "hôm nay" },
+    { "hanzi": "中国", "pinyin": "zhōng guó", "vi": "Trung Quốc" },
+    { "hanzi": "欢迎", "pinyin": "huān yíng", "vi": "hoan nghênh" },
+    { "hanzi": "铅笔", "pinyin": "qiān bǐ", "vi": "bút chì" },
+    { "hanzi": "喝水", "pinyin": "hē shuǐ", "vi": "uống nước" },
+    { "hanzi": "生日", "pinyin": "shēng rì", "vi": "sinh nhật" },
+    { "hanzi": "商店", "pinyin": "shāng diàn", "vi": "cửa hàng" },
+    { "hanzi": "明天", "pinyin": "míng tiān", "vi": "ngày mai" },
+    { "hanzi": "昨天", "pinyin": "zuó tiān", "vi": "hôm qua" },
+    { "hanzi": "学习", "pinyin": "xué xí", "vi": "học tập" },
+    { "hanzi": "银行", "pinyin": "yín háng", "vi": "ngân hàng" },
+    { "hanzi": "苹果", "pinyin": "píng guǒ", "vi": "quả táo" },
+    { "hanzi": "没有", "pinyin": "méi yǒu", "vi": "không có" },
+    { "hanzi": "学校", "pinyin": "xué xiào", "vi": "trường học" },
+    { "hanzi": "同学", "pinyin": "tóng xué", "vi": "bạn học" },
+    { "hanzi": "老师", "pinyin": "lǎo shī", "vi": "giáo viên" },
+    { "hanzi": "北京", "pinyin": "běi jīng", "vi": "Bắc Kinh" },
+    { "hanzi": "小时", "pinyin": "xiǎo shí", "vi": "giờ (tiếng đồng hồ)" },
+    { "hanzi": "法国", "pinyin": "fǎ guó", "vi": "nước Pháp" },
+    { "hanzi": "考试", "pinyin": "kǎo shì", "vi": "thi cử" },
+    { "hanzi": "米饭", "pinyin": "mǐ fàn", "vi": "cơm" },
+    { "hanzi": "面包", "pinyin": "miàn bāo", "vi": "bánh mì" },
+    { "hanzi": "汽车", "pinyin": "qì chē", "vi": "ô tô" },
+    { "hanzi": "大学", "pinyin": "dà xué", "vi": "đại học" },
+    { "hanzi": "问题", "pinyin": "wèn tí", "vi": "vấn đề" },
+    { "hanzi": "电脑", "pinyin": "diàn nǎo", "vi": "máy tính" },
+    { "hanzi": "下午", "pinyin": "xià wǔ", "vi": "buổi chiều" },
+    { "hanzi": "再见", "pinyin": "zài jiàn", "vi": "tạm biệt" },
+    { "hanzi": "电视", "pinyin": "diàn shì", "vi": "ti vi" },
+    { "hanzi": "妈妈", "pinyin": "mā ma", "vi": "mẹ" },
+    { "hanzi": "朋友", "pinyin": "péng you", "vi": "bạn bè" },
+    { "hanzi": "姐姐", "pinyin": "jiě jie", "vi": "chị gái" },
+    { "hanzi": "爸爸", "pinyin": "bà ba", "vi": "bố" }
+  ],
+  "confusables": [
+    {
+      "id": "z_zh",
+      "title": "z / zh",
+      "tipVi": "z: đầu lưỡi chạm sau răng trên, không uốn. zh: uốn lưỡi lên vòm miệng (như \"tr\" nặng).",
+      "items": [["zi4", "zhi4"], ["zao3", "zhao3"], ["zu3", "zhu3"], ["zang1", "zhang1"], ["zou3", "zhou3"], ["zuo4", "zhuo2"], ["zai4", "zhai4"], ["zeng1", "zheng1"]]
+    },
+    {
+      "id": "c_ch",
+      "title": "c / ch",
+      "tipVi": "c: như \"x\" bật hơi mạnh, lưỡi thẳng. ch: uốn lưỡi và bật hơi.",
+      "items": [["ci4", "chi4"], ["cai2", "chai2"], ["cao3", "chao3"], ["cu1", "chu1"], ["cang2", "chang2"], ["ceng2", "cheng2"], ["cun1", "chun1"]]
+    },
+    {
+      "id": "s_sh",
+      "title": "s / sh",
+      "tipVi": "s: như \"x\" tiếng Việt. sh: uốn lưỡi, gần \"s\" miền Bắc đọc nặng.",
+      "items": [["si4", "shi4"], ["sa3", "sha3"], ["san1", "shan1"], ["su4", "shu4"], ["sao1", "shao1"], ["sen1", "shen1"], ["song1", "shang1"]]
+    },
+    {
+      "id": "j_q_x",
+      "title": "j / q / x",
+      "tipVi": "j: như \"ch\" không bật hơi. q: như \"ch\" bật hơi mạnh. x: như \"x\" nhưng lưỡi đặt sau răng dưới.",
+      "items": [["ji1", "qi1", "xi1"], ["jia1", "qia1", "xia1"], ["jiu1", "qiu1", "xiu1"], ["jin1", "qin1", "xin1"], ["jian4", "qian4", "xian4"], ["jing1", "qing1", "xing1"]]
+    },
+    {
+      "id": "n_ng",
+      "title": "-n / -ng",
+      "tipVi": "-n: kết thúc bằng đầu lưỡi chạm lợi trên. -ng: lưỡi lùi về sau, âm vang trong mũi.",
+      "items": [["fan2", "fang2"], ["xin1", "xing1"], ["lin2", "ling2"], ["pin2", "ping2"], ["jin1", "jing1"], ["men2", "meng2"], ["chen2", "cheng2"], ["yin2", "ying2"]]
+    },
+    {
+      "id": "u_v",
+      "title": "ü / u",
+      "tipVi": "ü: tròn môi như \"u\" nhưng lưỡi đặt như \"i\". Sau j/q/x/y, \"u\" luôn là ü.",
+      "items": [["lv4", "lu4"], ["nv3", "nu3"], ["yu2", "wu2"], ["ju2", "zhu2"], ["qu4", "chu4"], ["xu1", "shu1"], ["lve4", "luo4"]]
+    }
+  ]
+}

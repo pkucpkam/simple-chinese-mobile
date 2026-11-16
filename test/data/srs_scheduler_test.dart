@@ -117,8 +117,10 @@ void main() {
     }) =>
         SrsCard(id: 1, wordId: 'w', skill: skill, due: t0, state: state, stability: stability);
 
-    test('thẻ mới → flashcard', () {
+    test('thẻ đọc mới → flashcard; thẻ nghe/thanh mới → vào thẳng bài tập', () {
       expect(selector.select(fresh()), ExerciseType.flashcard);
+      expect(selector.select(fresh(CardSkill.listen)), ExerciseType.listenChoice);
+      expect(selector.select(fresh(CardSkill.tone)), ExerciseType.toneChoice);
     });
     test('thẻ yếu → trắc nghiệm nghĩa', () {
       expect(selector.select(card(stability: 1)), ExerciseType.meaningChoice);
@@ -135,6 +137,9 @@ void main() {
     test('thẻ nghe → nghe chọn chữ', () {
       expect(selector.select(card(skill: CardSkill.listen, stability: 20)),
           ExerciseType.listenChoice);
+    });
+    test('thẻ thanh điệu → chọn thanh', () {
+      expect(selector.select(card(skill: CardSkill.tone)), ExerciseType.toneChoice);
     });
     test('dạng chưa có UI thì lùi về dạng có sẵn', () {
       const limited = ExerciseSelector(available: {

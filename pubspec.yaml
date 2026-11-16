@@ -52,6 +52,7 @@ dependencies:
   riverpod_annotation: ^4.0.2
   freezed_annotation: ^3.1.0
   json_annotation: ^4.11.0
+  two_dimensional_scrollables: ^0.5.6
 
 dev_dependencies:
   flutter_test:
@@ -80,6 +81,7 @@ flutter:
   # và thêm 1 dòng bên dưới — importer tự phát hiện, không cần sửa code.
   assets:
     - assets/content/hsk1/
+    - assets/pronunciation/
 
   fonts:
     - family: BeVietnamPro

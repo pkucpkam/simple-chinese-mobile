@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import '../../../core/pinyin/pinyin.dart';
 import '../../../data/models/srs_card.dart';
 import '../../../data/models/word.dart';
 import '../../../data/srs/exercise_selector.dart';
@@ -71,9 +72,11 @@ class SessionBuilder {
   /// dạng dễ (trắc nghiệm / nghe chọn) vì thẻ vừa quên.
   SessionTask retry(StudyItem item, List<Word> pool) => _single(
         item,
-        item.card.skill == CardSkill.listen
-            ? ExerciseType.listenChoice
-            : ExerciseType.meaningChoice,
+        switch (item.card.skill) {
+          CardSkill.listen => ExerciseType.listenChoice,
+          CardSkill.tone => ExerciseType.toneChoice,
+          _ => ExerciseType.meaningChoice,
+        },
         pool,
       );
 
@@ -81,6 +84,8 @@ class SessionBuilder {
     return switch (type) {
       ExerciseType.flashcard => FlashcardTask(item),
       ExerciseType.typePinyin => TypePinyinTask(item),
+      ExerciseType.toneChoice =>
+        ToneChoiceTask(item, toneVariants(item.word.pinyin, _random.nextInt)),
       ExerciseType.listenChoice ||
       ExerciseType.meaningChoice =>
         ChoiceTask(type, item, options(item.word, pool, type)),

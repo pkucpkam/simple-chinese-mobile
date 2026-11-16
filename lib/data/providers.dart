@@ -5,6 +5,7 @@ import 'content/content_importer.dart';
 import 'content/content_source.dart';
 import 'db/app_database.dart';
 import 'repositories/lesson_repository.dart';
+import 'repositories/pronunciation_repository.dart';
 import 'repositories/settings_repository.dart';
 import 'repositories/srs_repository.dart';
 import 'repositories/word_repository.dart';
@@ -44,3 +45,7 @@ SrsRepository srsRepository(Ref ref) => SrsRepository(
       ref.watch(appDatabaseProvider),
       ref.watch(settingsRepositoryProvider),
     );
+
+@Riverpod(keepAlive: true)
+PronunciationRepository pronunciationRepository(Ref ref) =>
+    PronunciationRepository();

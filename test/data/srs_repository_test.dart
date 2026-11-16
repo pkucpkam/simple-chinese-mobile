@@ -45,12 +45,13 @@ void main() {
   });
   tearDown(() => db.close());
 
-  test('addWords tạo thẻ read + listen, thêm lại không nhân đôi', () async {
+  test('addWords tạo thẻ read + listen + tone, thêm lại không nhân đôi', () async {
     await repo.addWords(['w0', 'w1']);
     await repo.addWords(['w0']);
     final cards = await db.select(db.cards).get();
-    expect(cards, hasLength(4));
-    expect(cards.map((c) => c.skill).toSet(), {CardSkill.read, CardSkill.listen});
+    expect(cards, hasLength(6));
+    expect(cards.map((c) => c.skill).toSet(),
+        {CardSkill.read, CardSkill.listen, CardSkill.tone});
   });
 
   test('hàng đợi tôn trọng giới hạn thẻ mới mỗi ngày', () async {

@@ -17,7 +17,7 @@ enum ExerciseType {
   /// Gõ pinyin có số thanh: "ni3 hao3".
   typePinyin,
 
-  /// Nghe, chọn thanh điệu (Sprint 2).
+  /// Nghe một từ, chọn cách viết pinyin có thanh đúng trong 4 phương án.
   toneChoice,
 
   /// Viết chữ từ trí nhớ (Sprint 3).
@@ -39,6 +39,7 @@ class ExerciseSelector {
     ExerciseType.listenChoice,
     ExerciseType.matching,
     ExerciseType.typePinyin,
+    ExerciseType.toneChoice,
   };
 
   /// Dưới ngưỡng này (ngày) coi là thẻ yếu.
@@ -50,10 +51,14 @@ class ExerciseSelector {
   final Set<ExerciseType> available;
 
   ExerciseType select(SrsCard card) {
-    if (card.isNew) return ExerciseType.flashcard;
+    // Thẻ đọc mới: giới thiệu từ bằng flashcard. Thẻ kỹ năng khác (nghe,
+    // thanh…) chỉ mở sau khi đã học thẻ đọc, nên vào thẳng bài tập dạng dễ.
+    if (card.isNew && card.skill == CardSkill.read) return ExerciseType.flashcard;
 
     // Thẻ vừa quên / đang học lại luôn coi là yếu, bất kể stability.
-    final weak = card.state != CardState.review || card.stability < weakBelow;
+    final weak = card.isNew ||
+        card.state != CardState.review ||
+        card.stability < weakBelow;
     final strong = !weak && card.stability >= strongFrom;
 
     final preferred = switch (card.skill) {

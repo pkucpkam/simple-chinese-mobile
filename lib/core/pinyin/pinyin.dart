@@ -136,3 +136,63 @@ bool numberedAnswerMatches(String answer, String expectedMarked) {
   final expected = expectedMarked.toLowerCase().replaceAll(RegExp(r"[\s'’]+"), '');
   return normalize(answer) == expected;
 }
+
+/// Thanh điệu của từng âm tiết: "lǎo shī" → [3, 1].
+List<int> tonesOf(String marked) =>
+    splitSyllables(marked).map(toneOfSyllable).toList();
+
+/// Đặt lại thanh cho từng âm tiết: withTones("lǎo shī", [2, 4]) → "láo shì".
+/// Dấu câu dính kèm âm tiết được giữ nguyên.
+String withTones(String marked, List<int> tones) {
+  final syllables = splitSyllables(marked);
+  assert(syllables.length == tones.length);
+  return [
+    for (var i = 0; i < syllables.length; i++)
+      _retone(syllables[i], tones[i]),
+  ].join(' ');
+}
+
+String _retone(String syllable, int tone) {
+  final m = RegExp(r'^([^\p{L}]*)([\p{L}]+)(.*)$', unicode: true).firstMatch(syllable);
+  if (m == null) return syllable;
+  final plain = syllableToNumbered(m.group(2)!); // vd "lao3"
+  final letters = plain.substring(0, plain.length - 1);
+  return '${m.group(1)}${syllableToMarked(letters, tone)}${m.group(3)}';
+}
+
+/// Tạo [count] phương án thanh điệu (đã gồm đáp án đúng, đã xáo trộn) cho bài
+/// "chọn thanh": mỗi phương án đổi thanh của một vài âm tiết. Âm tiết thanh
+/// nhẹ giữ nguyên để phương án sai không vô lý. [random] trả số nguyên ngẫu
+/// nhiên trong [0, max) — truyền `Random().nextInt`.
+List<String> toneVariants(
+  String marked,
+  int Function(int max) random, {
+  int count = 4,
+}) {
+  final correct = tonesOf(marked);
+  final changeable = [
+    for (var i = 0; i < correct.length; i++)
+      if (correct[i] != 5) i,
+  ];
+  final seen = {correct.join()};
+  final options = [marked];
+  // Không gian phương án có hạn (vd 1 âm tiết chỉ có 4), nên giới hạn số lần thử.
+  for (var attempt = 0; attempt < 200 && options.length < count; attempt++) {
+    if (changeable.isEmpty) break;
+    final tones = List.of(correct);
+    final changes = 1 + random(changeable.length);
+    for (var c = 0; c < changes; c++) {
+      final i = changeable[random(changeable.length)];
+      tones[i] = 1 + random(4);
+    }
+    if (seen.add(tones.join())) options.add(withTones(marked, tones));
+  }
+  // Xáo trộn Fisher–Yates.
+  for (var i = options.length - 1; i > 0; i--) {
+    final j = random(i + 1);
+    final t = options[i];
+    options[i] = options[j];
+    options[j] = t;
+  }
+  return options;
+}

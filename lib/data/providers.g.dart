@@ -310,3 +310,51 @@ final class SrsRepositoryProvider
 }
 
 String _$srsRepositoryHash() => r'2761178fc560b84a496e20bca335ca878f52da5d';
+
+@ProviderFor(pronunciationRepository)
+final pronunciationRepositoryProvider = PronunciationRepositoryProvider._();
+
+final class PronunciationRepositoryProvider
+    extends
+        $FunctionalProvider<
+          PronunciationRepository,
+          PronunciationRepository,
+          PronunciationRepository
+        >
+    with $Provider<PronunciationRepository> {
+  PronunciationRepositoryProvider._()
+    : super(
+        from: null,
+        argument: null,
+        retry: null,
+        name: r'pronunciationRepositoryProvider',
+        isAutoDispose: false,
+        dependencies: null,
+        $allTransitiveDependencies: null,
+      );
+
+  @override
+  String debugGetCreateSourceHash() => _$pronunciationRepositoryHash();
+
+  @$internal
+  @override
+  $ProviderElement<PronunciationRepository> $createElement(
+    $ProviderPointer pointer,
+  ) => $ProviderElement(pointer);
+
+  @override
+  PronunciationRepository create(Ref ref) {
+    return pronunciationRepository(ref);
+  }
+
+  /// {@macro riverpod.override_with_value}
+  Override overrideWithValue(PronunciationRepository value) {
+    return $ProviderOverride(
+      origin: this,
+      providerOverride: $SyncValueProvider<PronunciationRepository>(value),
+    );
+  }
+}
+
+String _$pronunciationRepositoryHash() =>
+    r'cb45be7f79fae9ec4583584c6c8c8017861837ce';

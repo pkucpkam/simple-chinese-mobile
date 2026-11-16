@@ -26,9 +26,10 @@ class PathScreen extends ConsumerWidget {
         value: lessons,
         data: (items) => ListView.separated(
           padding: const EdgeInsets.fromLTRB(20, 8, 20, 32),
-          itemCount: items.length,
+          itemCount: items.length + 1,
           separatorBuilder: (_, _) => const SizedBox(height: 16),
-          itemBuilder: (_, i) => _LessonCard(lesson: items[i]),
+          itemBuilder: (_, i) =>
+              i == 0 ? const _PronunciationCard() : _LessonCard(lesson: items[i - 1]),
         ),
       ),
     );
@@ -99,6 +100,33 @@ class _LessonCard extends ConsumerWidget {
             ],
           ],
         ),
+      ),
+    );
+  }
+}
+
+/// Lối vào phần luyện phát âm (bảng pinyin, thanh điệu, ghi âm).
+class _PronunciationCard extends StatelessWidget {
+  const _PronunciationCard();
+
+  @override
+  Widget build(BuildContext context) {
+    final scheme = Theme.of(context).colorScheme;
+    return Card(
+      color: scheme.primary,
+      clipBehavior: Clip.antiAlias,
+      child: ListTile(
+        onTap: () => context.push(Routes.pronunciation),
+        contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+        leading: const CircleAvatar(
+          backgroundColor: Colors.white24,
+          child: Icon(Icons.record_voice_over_rounded, color: Colors.white),
+        ),
+        title: const Text(S.pronunciationTitle,
+            style: TextStyle(color: Colors.white, fontWeight: FontWeight.w700)),
+        subtitle: const Text(S.pronunciationSubtitle,
+            style: TextStyle(color: Colors.white70)),
+        trailing: const Icon(Icons.arrow_forward_rounded, color: Colors.white),
       ),
     );
   }

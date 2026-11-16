@@ -1,4 +1,5 @@
 import 'package:flutter/foundation.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
@@ -11,6 +12,17 @@ class AudioService {
   AudioService();
 
   final AudioPlayer _player = AudioPlayer();
+  Set<String>? _assets;
+
+  /// Kiểm tra asset có trong bundle không (tránh ném lỗi khi file audio
+  /// chưa được bổ sung — khi đó dùng TTS).
+  Future<bool> _hasAsset(String path) async {
+    _assets ??= (await AssetManifest.loadFromAssetBundle(rootBundle))
+        .listAssets()
+        .toSet();
+    return _assets!.contains(path);
+  }
+
   final FlutterTts _tts = FlutterTts();
   bool _ttsReady = false;
 
@@ -28,7 +40,7 @@ class AudioService {
   /// hoặc chưa cài giọng tiếng Trung) để UI báo cho người dùng.
   Future<bool> play({required String text, String? assetPath}) async {
     await stop();
-    if (assetPath != null && assetPath.isNotEmpty) {
+    if (assetPath != null && assetPath.isNotEmpty && await _hasAsset(assetPath)) {
       try {
         await _player.setAsset(assetPath);
         _player.play(); // Không await: play() chỉ hoàn tất khi phát xong.

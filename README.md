@@ -55,13 +55,26 @@ trong sách giáo khoa (`bú shì`, `yí ge`).
 ## Ôn tập (SRS)
 
 - Lịch ôn theo FSRS (package `fsrs`), bọc trong `lib/data/srs/srs_scheduler.dart`.
-- Mỗi từ thêm vào bộ thẻ tạo 2 thẻ: **đọc** và **nghe**. Thẻ nghe chỉ mở từ ngày
-  hôm sau khi đã học thẻ đọc, để không dồn nhiều thẻ của cùng một từ vào một ngày.
+- Mỗi từ thêm vào bộ thẻ tạo 3 thẻ: **đọc**, **nghe**, **thanh điệu**. Thẻ nghe/thanh
+  chỉ mở từ ngày hôm sau khi đã học thẻ đọc, để không dồn nhiều thẻ của cùng một từ vào một ngày.
 - Giới hạn thẻ mới mỗi ngày chỉnh trong tab Tôi (mặc định 10).
 - Dạng bài chọn theo stability (`exercise_selector.dart`): thẻ mới → flashcard,
   yếu → trắc nghiệm nghĩa, trung bình → ghép cặp, mạnh → gõ pinyin; thẻ nghe →
-  nghe chọn chữ. Chấm tự động: sai = Again, đúng nhưng > 8 giây = Hard, đúng nhanh = Good.
+  nghe chọn chữ; thẻ thanh → chọn pinyin đúng thanh. Chấm tự động: sai = Again, đúng nhưng > 8 giây = Hard, đúng nhanh = Good.
 - Bản debug có mục **Công cụ dev** trong tab Tôi để tua thời gian, dùng để thử lịch ôn.
+
+## Phát âm
+
+- `assets/pronunciation/syllables.json`: bảng pinyin (392 âm tiết, ~1090 tổ hợp âm
+  tiết + thanh), mỗi tổ hợp có một chữ Hán đại diện để TTS đọc đúng âm. Sinh bằng
+  `tool/gen_pinyin_chart.py` từ Unicode Unihan (`kHanyuPinlu`, `kMandarin`, `kGB0`):
+  chỉ lấy chữ giản thể thông dụng mà cách đọc đó chiếm ≥ 90% (tránh chữ đa âm).
+- `assets/pronunciation/drills.json`: từ luyện cặp thanh và các nhóm âm dễ nhầm
+  (z/zh, c/ch, s/sh, j/q/x, -n/-ng, ü/u).
+- Audio ghi âm sẵn (nếu bổ sung sau) đặt theo quy ước `assets/audio/pinyin/zhi4.mp3`
+  (`v` thay cho `ü`); app tự dùng file nếu có, không có thì đọc bằng TTS.
+- Ghi âm & so sánh: ghi giọng người học (tối đa 5 giây), hiện dạng sóng, nghe xen kẽ
+  với mẫu. Chưa chấm điểm thanh điệu tự động.
 
 ## Font
 

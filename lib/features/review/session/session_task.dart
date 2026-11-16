@@ -40,6 +40,20 @@ final class ChoiceTask extends SessionTask {
   List<StudyItem> get items => [item];
 }
 
+/// Nghe một từ, chọn pinyin có thanh đúng.
+final class ToneChoiceTask extends SessionTask {
+  const ToneChoiceTask(this.item, this.options);
+  final StudyItem item;
+
+  /// Các phương án pinyin (đã trộn), chứa đúng 1 lần `item.word.pinyin`.
+  final List<String> options;
+
+  @override
+  ExerciseType get type => ExerciseType.toneChoice;
+  @override
+  List<StudyItem> get items => [item];
+}
+
 final class TypePinyinTask extends SessionTask {
   const TypePinyinTask(this.item);
   final StudyItem item;

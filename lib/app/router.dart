@@ -6,6 +6,11 @@ import '../features/dictionary/dictionary_screen.dart';
 import '../features/dictionary/word_detail_screen.dart';
 import '../features/path/path_screen.dart';
 import '../features/profile/profile_screen.dart';
+import '../features/pronunciation/drill/drill_builder.dart';
+import '../features/pronunciation/drill/drill_screen.dart';
+import '../features/pronunciation/pinyin_chart_screen.dart';
+import '../features/pronunciation/pronunciation_screen.dart';
+import '../features/pronunciation/record_compare_screen.dart';
 import '../features/review/review_screen.dart';
 import '../features/review/review_session_screen.dart';
 import '../features/review/session/session_builder.dart';
@@ -55,6 +60,30 @@ GoRouter router(Ref ref) {
         path: Routes.sessionPattern,
         builder: (_, state) => ReviewSessionScreen(
           mode: SessionMode.values.byName(state.pathParameters['mode']!),
+        ),
+      ),
+      GoRoute(
+        parentNavigatorKey: _rootKey,
+        path: Routes.pronunciation,
+        builder: (_, _) => const PronunciationScreen(),
+      ),
+      GoRoute(
+        parentNavigatorKey: _rootKey,
+        path: Routes.pinyinChart,
+        builder: (_, _) => const PinyinChartScreen(),
+      ),
+      GoRoute(
+        parentNavigatorKey: _rootKey,
+        path: Routes.drillPattern,
+        builder: (_, state) =>
+            DrillScreen(kind: DrillKind.parse(state.pathParameters['kind']!)),
+      ),
+      GoRoute(
+        parentNavigatorKey: _rootKey,
+        path: Routes.recordPath,
+        builder: (_, state) => RecordCompareScreen(
+          hanzi: state.uri.queryParameters['hanzi'] ?? '',
+          pinyin: state.uri.queryParameters['pinyin'] ?? '',
         ),
       ),
     ],
