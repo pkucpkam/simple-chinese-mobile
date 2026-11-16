@@ -1,0 +1,33 @@
+{
+  "contentVersion": 1,
+  "level": 1,
+  "items": [
+    {
+      "id": "hsk1-l01",
+      "order": 1,
+      "title": "Xin chào",
+      "subtitle": "Chào hỏi, cảm ơn, tạm biệt",
+      "dialogue": [
+        { "speaker": "A", "hanzi": "你好！", "pinyin": "nǐ hǎo!", "vi": "Xin chào!" },
+        { "speaker": "B", "hanzi": "你好！", "pinyin": "nǐ hǎo!", "vi": "Xin chào!" },
+        { "speaker": "A", "hanzi": "你是老师吗？", "pinyin": "nǐ shì lǎo shī ma?", "vi": "Bạn là giáo viên à?" },
+        { "speaker": "B", "hanzi": "我不是老师，我是学生。", "pinyin": "wǒ bú shì lǎo shī, wǒ shì xué sheng.", "vi": "Tôi không phải giáo viên, tôi là học sinh." },
+        { "speaker": "A", "hanzi": "谢谢！再见！", "pinyin": "xiè xie! zài jiàn!", "vi": "Cảm ơn! Tạm biệt!" }
+      ]
+    },
+    {
+      "id": "hsk1-l02",
+      "order": 2,
+      "title": "Gia đình tôi",
+      "subtitle": "Số đếm 1–10, thành viên gia đình",
+      "dialogue": []
+    },
+    {
+      "id": "hsk1-l03",
+      "order": 3,
+      "title": "Ăn gì đây?",
+      "subtitle": "Đồ ăn, đồ uống, sở thích",
+      "dialogue": []
+    }
+  ]
+}

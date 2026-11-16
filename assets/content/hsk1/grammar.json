@@ -1,0 +1,27 @@
+{
+  "contentVersion": 1,
+  "level": 1,
+  "items": [
+    {
+      "id": "hsk1-g01",
+      "lessonId": "hsk1-l01",
+      "title": "Câu chữ 是",
+      "pattern": "A + 是 + B",
+      "explanationVi": "Dùng 是 (shì) để nói \"A là B\". Phủ định bằng 不是 (bú shì).",
+      "examples": [
+        { "hanzi": "我是学生。", "pinyin": "wǒ shì xué sheng.", "vi": "Tôi là học sinh." },
+        { "hanzi": "他不是老师。", "pinyin": "tā bú shì lǎo shī.", "vi": "Anh ấy không phải giáo viên." }
+      ]
+    },
+    {
+      "id": "hsk1-g02",
+      "lessonId": "hsk1-l01",
+      "title": "Câu hỏi với 吗",
+      "pattern": "Câu trần thuật + 吗？",
+      "explanationVi": "Thêm 吗 (ma) vào cuối câu trần thuật để tạo câu hỏi có/không.",
+      "examples": [
+        { "hanzi": "你是老师吗？", "pinyin": "nǐ shì lǎo shī ma?", "vi": "Bạn là giáo viên à?" }
+      ]
+    }
+  ]
+}
