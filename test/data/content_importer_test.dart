@@ -177,8 +177,17 @@ void main() {
         containsAll(['hsk1/words', 'hsk1/lessons', 'hsk1/grammar']));
 
     final words = await db.select(db.words).get();
-    expect(words, hasLength(30));
-    expect(words.map((w) => w.id).toSet(), hasLength(30), reason: 'id trùng');
+    expect(words.length, greaterThanOrEqualTo(150), reason: 'đủ từ vựng HSK1');
+    expect(words.map((w) => w.id).toSet(), hasLength(words.length), reason: 'id trùng');
+    expect(words.map((w) => w.hanzi).toSet(), hasLength(words.length), reason: 'từ trùng');
+
+    final lessons = await db.select(db.lessons).get();
+    expect(lessons, hasLength(15));
+    for (final l in lessons) {
+      final json = jsonDecode(l.contentJson) as Map<String, dynamic>;
+      expect(json['dialogue'], isNotEmpty, reason: '${l.id} thiếu hội thoại');
+      expect(json['sentences'], isNotEmpty, reason: '${l.id} thiếu câu sắp xếp');
+    }
 
     final lessonIds = (await db.select(db.lessons).get()).map((l) => l.id).toSet();
     for (final w in words) {

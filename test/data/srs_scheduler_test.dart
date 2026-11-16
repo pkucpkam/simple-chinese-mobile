@@ -147,8 +147,13 @@ void main() {
         ExerciseType.meaningChoice,
       });
       expect(limited.select(card(stability: 20)), ExerciseType.meaningChoice);
+      expect(limited.select(card(skill: CardSkill.write, stability: 20)),
+          ExerciseType.meaningChoice, reason: 'write chưa có → lùi về trắc nghiệm');
+    });
+    test('thẻ viết → viết chữ', () {
       expect(selector.select(card(skill: CardSkill.write, stability: 20)),
-          ExerciseType.typePinyin, reason: 'write chưa có → gõ pinyin');
+          ExerciseType.write);
+      expect(selector.select(fresh(CardSkill.write)), ExerciseType.write);
     });
   });
 }

@@ -26,14 +26,19 @@ void main() {
     // Import chạy trên asset thật (rootBundle) → chờ xong.
     await settle(tester);
 
+    // Tab Học: lộ trình, bài 1 mở (hiện tên), bài 2 khoá.
+    expect(find.text('Lộ trình HSK 1'), findsOneWidget);
     expect(find.text('Xin chào'), findsOneWidget);
-    expect(find.text('Học'), findsOneWidget);
+    expect(find.byIcon(Icons.lock_rounded), findsWidgets);
 
-    await tester.tap(find.text('老师').first);
+    // Tab Tra cứu → mở Chi tiết từ.
+    await tester.tap(find.text('Tra cứu'));
+    await settle(tester);
+    await tester.tap(find.text('你').first);
     await settle(tester);
 
-    expect(find.text('LÃO SƯ'), findsOneWidget);
-    expect(find.textContaining('giáo viên'), findsWidgets);
+    expect(find.text('NHĨ'), findsOneWidget);
+    expect(find.textContaining('ngôi thứ hai'), findsWidgets);
 
     // Đóng DB và dọn timer của stream query trước khi test kết thúc.
     await tester.pumpWidget(const SizedBox());

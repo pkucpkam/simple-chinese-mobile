@@ -12,6 +12,7 @@ import 'exercises/choice_exercise.dart';
 import 'exercises/matching_exercise.dart';
 import 'exercises/tone_choice_exercise.dart';
 import 'exercises/type_pinyin_exercise.dart';
+import 'exercises/write_exercise.dart';
 import 'session/review_session_controller.dart';
 import 'session/session_builder.dart';
 import 'session/session_task.dart';
@@ -103,6 +104,8 @@ class ReviewSessionScreen extends ConsumerWidget {
         ToneChoiceExercise(task: task, onGrade: grade, onContinue: next),
       TypePinyinTask() =>
         TypePinyinExercise(task: task, onGrade: grade, onContinue: next),
+      WriteTask(:final item) =>
+        WriteExercise(item: item, onGrade: grade, onContinue: next),
       MatchingTask() =>
         MatchingExercise(task: task, onGrade: grade, onContinue: next),
     };

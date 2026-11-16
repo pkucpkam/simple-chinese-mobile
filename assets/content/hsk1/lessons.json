@@ -1,33 +1,206 @@
 {
-  "contentVersion": 1,
+  "contentVersion": 2,
   "level": 1,
   "items": [
     {
-      "id": "hsk1-l01",
-      "order": 1,
-      "title": "Xin chào",
-      "subtitle": "Chào hỏi, cảm ơn, tạm biệt",
+      "id": "hsk1-l01", "order": 1, "title": "Xin chào", "subtitle": "Chào hỏi, cảm ơn, tạm biệt",
       "dialogue": [
         { "speaker": "A", "hanzi": "你好！", "pinyin": "nǐ hǎo!", "vi": "Xin chào!" },
         { "speaker": "B", "hanzi": "你好！", "pinyin": "nǐ hǎo!", "vi": "Xin chào!" },
         { "speaker": "A", "hanzi": "你是老师吗？", "pinyin": "nǐ shì lǎo shī ma?", "vi": "Bạn là giáo viên à?" },
         { "speaker": "B", "hanzi": "我不是老师，我是学生。", "pinyin": "wǒ bú shì lǎo shī, wǒ shì xué sheng.", "vi": "Tôi không phải giáo viên, tôi là học sinh." },
         { "speaker": "A", "hanzi": "谢谢！再见！", "pinyin": "xiè xie! zài jiàn!", "vi": "Cảm ơn! Tạm biệt!" }
+      ],
+      "sentences": [
+        { "tokens": ["我", "是", "学生"], "vi": "Tôi là học sinh." },
+        { "tokens": ["他", "不", "是", "老师"], "vi": "Anh ấy không phải giáo viên." }
       ]
     },
     {
-      "id": "hsk1-l02",
-      "order": 2,
-      "title": "Gia đình tôi",
-      "subtitle": "Số đếm 1–10, thành viên gia đình",
-      "dialogue": []
+      "id": "hsk1-l02", "order": 2, "title": "Gia đình tôi", "subtitle": "Số đếm 1–10, thành viên gia đình",
+      "dialogue": [
+        { "speaker": "A", "hanzi": "你家有几口人？", "pinyin": "nǐ jiā yǒu jǐ kǒu rén?", "vi": "Nhà bạn có mấy người?" },
+        { "speaker": "B", "hanzi": "我家有三口人。", "pinyin": "wǒ jiā yǒu sān kǒu rén.", "vi": "Nhà tôi có ba người." },
+        { "speaker": "A", "hanzi": "爸爸、妈妈和你？", "pinyin": "bà ba, mā ma hé nǐ?", "vi": "Bố, mẹ và bạn?" },
+        { "speaker": "B", "hanzi": "对，我是他们的女儿。", "pinyin": "duì, wǒ shì tā men de nǚ ér.", "vi": "Đúng, tôi là con gái của họ." }
+      ],
+      "sentences": [
+        { "tokens": ["我", "家", "有", "三", "口", "人"], "vi": "Nhà tôi có ba người." },
+        { "tokens": ["他", "是", "我", "儿子"], "vi": "Nó là con trai tôi." }
+      ]
     },
     {
-      "id": "hsk1-l03",
-      "order": 3,
-      "title": "Ăn gì đây?",
-      "subtitle": "Đồ ăn, đồ uống, sở thích",
-      "dialogue": []
+      "id": "hsk1-l03", "order": 3, "title": "Ăn gì đây?", "subtitle": "Đồ ăn, đồ uống, sở thích",
+      "dialogue": [
+        { "speaker": "A", "hanzi": "你喜欢吃什么？", "pinyin": "nǐ xǐ huan chī shén me?", "vi": "Bạn thích ăn gì?" },
+        { "speaker": "B", "hanzi": "我喜欢吃米饭。", "pinyin": "wǒ xǐ huan chī mǐ fàn.", "vi": "Tôi thích ăn cơm." },
+        { "speaker": "A", "hanzi": "你喝茶吗？", "pinyin": "nǐ hē chá ma?", "vi": "Bạn uống trà không?" },
+        { "speaker": "B", "hanzi": "不喝，我喝水。谢谢！", "pinyin": "bù hē, wǒ hē shuǐ. xiè xie!", "vi": "Không, tôi uống nước. Cảm ơn!" }
+      ],
+      "sentences": [
+        { "tokens": ["我", "喜欢", "喝", "茶"], "vi": "Tôi thích uống trà." },
+        { "tokens": ["你", "吃", "什么"], "vi": "Bạn ăn gì?" }
+      ]
+    },
+    {
+      "id": "hsk1-l04", "order": 4, "title": "Ai đây?", "subtitle": "Đại từ, câu hỏi với 吗, 呢, 谁",
+      "dialogue": [
+        { "speaker": "A", "hanzi": "这是谁？", "pinyin": "zhè shì shéi?", "vi": "Đây là ai?" },
+        { "speaker": "B", "hanzi": "这是我的朋友。", "pinyin": "zhè shì wǒ de péng you.", "vi": "Đây là bạn của tôi." },
+        { "speaker": "A", "hanzi": "他们是哪国人？", "pinyin": "tā men shì nǎ guó rén?", "vi": "Họ là người nước nào?" },
+        { "speaker": "B", "hanzi": "他们是中国人。你呢？", "pinyin": "tā men shì Zhōng guó rén. nǐ ne?", "vi": "Họ là người Trung Quốc. Còn bạn?" },
+        { "speaker": "A", "hanzi": "我是越南人。", "pinyin": "wǒ shì Yuè nán rén.", "vi": "Tôi là người Việt Nam." }
+      ],
+      "sentences": [
+        { "tokens": ["这", "是", "谁", "的", "书"], "vi": "Đây là sách của ai?" },
+        { "tokens": ["你们", "是", "老师", "吗"], "vi": "Các bạn là giáo viên à?" }
+      ]
+    },
+    {
+      "id": "hsk1-l05", "order": 5, "title": "Bao nhiêu tuổi?", "subtitle": "Số đếm, tuổi, lượng từ 个",
+      "dialogue": [
+        { "speaker": "A", "hanzi": "你女儿几岁？", "pinyin": "nǐ nǚ ér jǐ suì?", "vi": "Con gái bạn mấy tuổi?" },
+        { "speaker": "B", "hanzi": "她六岁。", "pinyin": "tā liù suì.", "vi": "Bé sáu tuổi." },
+        { "speaker": "A", "hanzi": "你们学校有多少个学生？", "pinyin": "nǐ men xué xiào yǒu duō shao ge xué sheng?", "vi": "Trường các bạn có bao nhiêu học sinh?" },
+        { "speaker": "B", "hanzi": "有八百个学生。", "pinyin": "yǒu bā bǎi ge xué sheng.", "vi": "Có tám trăm học sinh." }
+      ],
+      "sentences": [
+        { "tokens": ["我", "女儿", "七", "岁"], "vi": "Con gái tôi bảy tuổi." },
+        { "tokens": ["你", "有", "几", "个", "朋友"], "vi": "Bạn có mấy người bạn?" }
+      ]
+    },
+    {
+      "id": "hsk1-l06", "order": 6, "title": "Hôm nay thứ mấy?", "subtitle": "Ngày, tháng, năm, thứ",
+      "dialogue": [
+        { "speaker": "A", "hanzi": "今天几月几号？", "pinyin": "jīn tiān jǐ yuè jǐ hào?", "vi": "Hôm nay ngày mấy tháng mấy?" },
+        { "speaker": "B", "hanzi": "今天九月一号。", "pinyin": "jīn tiān jiǔ yuè yī hào.", "vi": "Hôm nay mùng một tháng chín." },
+        { "speaker": "A", "hanzi": "明天星期几？", "pinyin": "míng tiān xīng qī jǐ?", "vi": "Ngày mai thứ mấy?" },
+        { "speaker": "B", "hanzi": "明天星期三。", "pinyin": "míng tiān xīng qī sān.", "vi": "Ngày mai thứ Tư." },
+        { "speaker": "A", "hanzi": "昨天你去学校了吗？", "pinyin": "zuó tiān nǐ qù xué xiào le ma?", "vi": "Hôm qua bạn có đi học không?" },
+        { "speaker": "B", "hanzi": "去了。", "pinyin": "qù le.", "vi": "Có đi." }
+      ],
+      "sentences": [
+        { "tokens": ["今天", "星期", "几"], "vi": "Hôm nay thứ mấy?" },
+        { "tokens": ["我", "昨天", "回", "家", "了"], "vi": "Hôm qua tôi đã về nhà." }
+      ]
+    },
+    {
+      "id": "hsk1-l07", "order": 7, "title": "Mấy giờ rồi?", "subtitle": "Giờ giấc, hoạt động trong ngày",
+      "dialogue": [
+        { "speaker": "A", "hanzi": "现在几点？", "pinyin": "xiàn zài jǐ diǎn?", "vi": "Bây giờ mấy giờ?" },
+        { "speaker": "B", "hanzi": "现在下午三点。", "pinyin": "xiàn zài xià wǔ sān diǎn.", "vi": "Bây giờ ba giờ chiều." },
+        { "speaker": "A", "hanzi": "你几点工作？", "pinyin": "nǐ jǐ diǎn gōng zuò?", "vi": "Mấy giờ bạn làm việc?" },
+        { "speaker": "B", "hanzi": "上午八点。我很忙。", "pinyin": "shàng wǔ bā diǎn. wǒ hěn máng.", "vi": "Tám giờ sáng. Tôi rất bận." }
+      ],
+      "sentences": [
+        { "tokens": ["我", "十", "点", "睡觉"], "vi": "Tôi đi ngủ lúc mười giờ." },
+        { "tokens": ["你", "下午", "做", "什么"], "vi": "Buổi chiều bạn làm gì?" }
+      ]
+    },
+    {
+      "id": "hsk1-l08", "order": 8, "title": "Bạn đi đâu?", "subtitle": "Địa điểm, đi lại, 在 / 去 / 来",
+      "dialogue": [
+        { "speaker": "A", "hanzi": "你去哪儿？", "pinyin": "nǐ qù nǎr?", "vi": "Bạn đi đâu?" },
+        { "speaker": "B", "hanzi": "我去医院。", "pinyin": "wǒ qù yī yuàn.", "vi": "Tôi đi bệnh viện." },
+        { "speaker": "A", "hanzi": "你住在哪儿？", "pinyin": "nǐ zhù zài nǎr?", "vi": "Bạn sống ở đâu?" },
+        { "speaker": "B", "hanzi": "我住在北京。你来我家吧！", "pinyin": "wǒ zhù zài Běi jīng. nǐ lái wǒ jiā ba!", "vi": "Tôi sống ở Bắc Kinh. Bạn đến nhà tôi chơi nhé!" }
+      ],
+      "sentences": [
+        { "tokens": ["我", "在", "学校", "学习"], "vi": "Tôi học ở trường." },
+        { "tokens": ["他", "明天", "回", "北京"], "vi": "Ngày mai anh ấy về Bắc Kinh." }
+      ]
+    },
+    {
+      "id": "hsk1-l09", "order": 9, "title": "Ở đâu nhỉ?", "subtitle": "Vị trí: trên, dưới, trước, sau, trong",
+      "dialogue": [
+        { "speaker": "A", "hanzi": "我的书在哪儿？", "pinyin": "wǒ de shū zài nǎr?", "vi": "Sách của tôi đâu?" },
+        { "speaker": "B", "hanzi": "在桌子上。", "pinyin": "zài zhuō zi shàng.", "vi": "Ở trên bàn." },
+        { "speaker": "A", "hanzi": "杯子里有水吗？", "pinyin": "bēi zi lǐ yǒu shuǐ ma?", "vi": "Trong cốc có nước không?" },
+        { "speaker": "B", "hanzi": "没有。", "pinyin": "méi yǒu.", "vi": "Không có." }
+      ],
+      "sentences": [
+        { "tokens": ["书", "在", "桌子", "上"], "vi": "Sách ở trên bàn." },
+        { "tokens": ["学校", "后面", "有", "医院"], "vi": "Phía sau trường có bệnh viện." }
+      ]
+    },
+    {
+      "id": "hsk1-l10", "order": 10, "title": "Đi chợ", "subtitle": "Mua bán, tiền, lượng từ",
+      "dialogue": [
+        { "speaker": "A", "hanzi": "你好，你买什么？", "pinyin": "nǐ hǎo, nǐ mǎi shén me?", "vi": "Chào bạn, bạn mua gì?" },
+        { "speaker": "B", "hanzi": "我买苹果。多少钱？", "pinyin": "wǒ mǎi píng guǒ. duō shao qián?", "vi": "Tôi mua táo. Bao nhiêu tiền?" },
+        { "speaker": "A", "hanzi": "五块钱一个。", "pinyin": "wǔ kuài qián yí ge.", "vi": "Năm đồng một quả." },
+        { "speaker": "B", "hanzi": "我买三个。", "pinyin": "wǒ mǎi sān ge.", "vi": "Tôi mua ba quả." }
+      ],
+      "sentences": [
+        { "tokens": ["这", "本", "书", "多少", "钱"], "vi": "Quyển sách này bao nhiêu tiền?" },
+        { "tokens": ["我", "想", "买", "衣服"], "vi": "Tôi muốn mua quần áo." }
+      ]
+    },
+    {
+      "id": "hsk1-l11", "order": 11, "title": "Làm quen", "subtitle": "Tên, nghề nghiệp, 和 và 都",
+      "dialogue": [
+        { "speaker": "A", "hanzi": "你叫什么名字？", "pinyin": "nǐ jiào shén me míng zi?", "vi": "Bạn tên là gì?" },
+        { "speaker": "B", "hanzi": "我叫李月。你呢？", "pinyin": "wǒ jiào Lǐ Yuè. nǐ ne?", "vi": "Tôi tên Lý Nguyệt. Còn bạn?" },
+        { "speaker": "A", "hanzi": "我叫王明，我是医生。", "pinyin": "wǒ jiào Wáng Míng, wǒ shì yī shēng.", "vi": "Tôi tên Vương Minh, tôi là bác sĩ." },
+        { "speaker": "B", "hanzi": "认识你很高兴！", "pinyin": "rèn shi nǐ hěn gāo xìng!", "vi": "Rất vui được làm quen với bạn!" }
+      ],
+      "sentences": [
+        { "tokens": ["我们", "都", "是", "同学"], "vi": "Chúng tôi đều là bạn học." },
+        { "tokens": ["认识", "你", "很", "高兴"], "vi": "Rất vui được làm quen với bạn." }
+      ]
+    },
+    {
+      "id": "hsk1-l12", "order": 12, "title": "Gọi điện, đi xe", "subtitle": "Giao thông, lời xin lỗi và cảm ơn",
+      "dialogue": [
+        { "speaker": "A", "hanzi": "喂，你在哪儿？", "pinyin": "wèi, nǐ zài nǎr?", "vi": "A lô, bạn đang ở đâu?" },
+        { "speaker": "B", "hanzi": "对不起，我在出租车上。", "pinyin": "duì bu qǐ, wǒ zài chū zū chē shàng.", "vi": "Xin lỗi, tôi đang ở trên taxi." },
+        { "speaker": "A", "hanzi": "没关系。请来饭店吧。", "pinyin": "méi guān xi. qǐng lái fàn diàn ba.", "vi": "Không sao. Bạn đến nhà hàng nhé." },
+        { "speaker": "B", "hanzi": "好的，谢谢！", "pinyin": "hǎo de, xiè xie!", "vi": "Được, cảm ơn!" },
+        { "speaker": "A", "hanzi": "不客气。", "pinyin": "bú kè qi.", "vi": "Không có gì." }
+      ],
+      "sentences": [
+        { "tokens": ["我", "坐", "飞机", "去", "北京"], "vi": "Tôi đi máy bay đến Bắc Kinh." },
+        { "tokens": ["我", "给", "妈妈", "打电话"], "vi": "Tôi gọi điện cho mẹ." }
+      ]
+    },
+    {
+      "id": "hsk1-l13", "order": 13, "title": "Thời tiết", "subtitle": "Lạnh, nóng, mưa và tính từ",
+      "dialogue": [
+        { "speaker": "A", "hanzi": "今天天气怎么样？", "pinyin": "jīn tiān tiān qì zěn me yàng?", "vi": "Hôm nay thời tiết thế nào?" },
+        { "speaker": "B", "hanzi": "太热了！", "pinyin": "tài rè le!", "vi": "Nóng quá!" },
+        { "speaker": "A", "hanzi": "明天会下雨吗？", "pinyin": "míng tiān huì xià yǔ ma?", "vi": "Ngày mai có mưa không?" },
+        { "speaker": "B", "hanzi": "会下雨，也很冷。", "pinyin": "huì xià yǔ, yě hěn lěng.", "vi": "Sẽ mưa, cũng rất lạnh." }
+      ],
+      "sentences": [
+        { "tokens": ["今天", "天气", "很", "好"], "vi": "Hôm nay thời tiết rất đẹp." },
+        { "tokens": ["北京", "太", "冷", "了"], "vi": "Bắc Kinh lạnh quá." }
+      ]
+    },
+    {
+      "id": "hsk1-l14", "order": 14, "title": "Sở thích", "subtitle": "Xem phim, nghe, đọc, thú cưng",
+      "dialogue": [
+        { "speaker": "A", "hanzi": "你喜欢做什么？", "pinyin": "nǐ xǐ huan zuò shén me?", "vi": "Bạn thích làm gì?" },
+        { "speaker": "B", "hanzi": "我喜欢看电影。你呢？", "pinyin": "wǒ xǐ huan kàn diàn yǐng. nǐ ne?", "vi": "Tôi thích xem phim. Còn bạn?" },
+        { "speaker": "A", "hanzi": "我喜欢看书，也爱我的猫。", "pinyin": "wǒ xǐ huan kàn shū, yě ài wǒ de māo.", "vi": "Tôi thích đọc sách, và yêu con mèo của tôi." },
+        { "speaker": "B", "hanzi": "我家有一只狗。", "pinyin": "wǒ jiā yǒu yì zhī gǒu.", "vi": "Nhà tôi có một con chó." }
+      ],
+      "sentences": [
+        { "tokens": ["我们", "去", "看", "电影", "吧"], "vi": "Chúng ta đi xem phim nhé." },
+        { "tokens": ["爸爸", "在", "看", "电视"], "vi": "Bố đang xem ti vi." }
+      ]
+    },
+    {
+      "id": "hsk1-l15", "order": 15, "title": "Học tiếng Trung", "subtitle": "会, 能, 想 và hỏi 怎么",
+      "dialogue": [
+        { "speaker": "A", "hanzi": "你会说汉语吗？", "pinyin": "nǐ huì shuō hàn yǔ ma?", "vi": "Bạn biết nói tiếng Trung không?" },
+        { "speaker": "B", "hanzi": "会一点儿。", "pinyin": "huì yì diǎnr.", "vi": "Biết một chút." },
+        { "speaker": "A", "hanzi": "这个字怎么读？", "pinyin": "zhè ge zì zěn me dú?", "vi": "Chữ này đọc thế nào?" },
+        { "speaker": "B", "hanzi": "读“爱”。我想去中国学习。", "pinyin": "dú “ài”. wǒ xiǎng qù Zhōng guó xué xí.", "vi": "Đọc là “ài”. Tôi muốn sang Trung Quốc học." }
+      ],
+      "sentences": [
+        { "tokens": ["我", "会", "写", "汉字"], "vi": "Tôi biết viết chữ Hán." },
+        { "tokens": ["你", "的", "汉语", "怎么样"], "vi": "Tiếng Trung của bạn thế nào?" }
+      ]
     }
   ]
 }

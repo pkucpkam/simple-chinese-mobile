@@ -4,6 +4,7 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 import '../features/dictionary/dictionary_screen.dart';
 import '../features/dictionary/word_detail_screen.dart';
+import '../features/lesson/lesson_screen.dart';
 import '../features/path/path_screen.dart';
 import '../features/profile/profile_screen.dart';
 import '../features/pronunciation/drill/drill_builder.dart';
@@ -14,6 +15,7 @@ import '../features/pronunciation/record_compare_screen.dart';
 import '../features/review/review_screen.dart';
 import '../features/review/review_session_screen.dart';
 import '../features/review/session/session_builder.dart';
+import '../features/writing/writing_screen.dart';
 import 'routes.dart';
 import 'strings.dart';
 
@@ -61,6 +63,16 @@ GoRouter router(Ref ref) {
         builder: (_, state) => ReviewSessionScreen(
           mode: SessionMode.values.byName(state.pathParameters['mode']!),
         ),
+      ),
+      GoRoute(
+        parentNavigatorKey: _rootKey,
+        path: Routes.lessonPattern,
+        builder: (_, state) => LessonScreen(lessonId: state.pathParameters['id']!),
+      ),
+      GoRoute(
+        parentNavigatorKey: _rootKey,
+        path: Routes.writePattern,
+        builder: (_, state) => WritingScreen(wordId: state.pathParameters['id']!),
       ),
       GoRoute(
         parentNavigatorKey: _rootKey,

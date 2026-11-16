@@ -54,6 +54,17 @@ final class ToneChoiceTask extends SessionTask {
   List<StudyItem> get items => [item];
 }
 
+/// Viết chữ Hán của từ từ trí nhớ.
+final class WriteTask extends SessionTask {
+  const WriteTask(this.item);
+  final StudyItem item;
+
+  @override
+  ExerciseType get type => ExerciseType.write;
+  @override
+  List<StudyItem> get items => [item];
+}
+
 final class TypePinyinTask extends SessionTask {
   const TypePinyinTask(this.item);
   final StudyItem item;

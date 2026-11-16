@@ -1,225 +1,159 @@
 {
-  "contentVersion": 1,
+  "contentVersion": 2,
   "level": 1,
   "items": [
-    {
-      "id": "hsk1-001", "hanzi": "你", "pinyin": "nǐ", "hanViet": "nhĩ",
-      "meaningVi": "bạn, anh, chị (ngôi thứ hai số ít)", "lessonId": "hsk1-l01", "mustWrite": true,
-      "examples": [
-        { "hanzi": "你好！", "pinyin": "nǐ hǎo!", "vi": "Xin chào!" },
-        { "hanzi": "你是老师吗？", "pinyin": "nǐ shì lǎo shī ma?", "vi": "Bạn là giáo viên à?" }
-      ]
-    },
-    {
-      "id": "hsk1-002", "hanzi": "好", "pinyin": "hǎo", "hanViet": "hảo",
-      "meaningVi": "tốt, khỏe, hay", "lessonId": "hsk1-l01", "mustWrite": true,
-      "examples": [
-        { "hanzi": "我很好。", "pinyin": "wǒ hěn hǎo.", "vi": "Tôi rất khỏe." },
-        { "hanzi": "好的。", "pinyin": "hǎo de.", "vi": "Được rồi." }
-      ]
-    },
-    {
-      "id": "hsk1-003", "hanzi": "我", "pinyin": "wǒ", "hanViet": "ngã",
-      "meaningVi": "tôi, mình, tớ", "lessonId": "hsk1-l01", "mustWrite": true,
-      "examples": [
-        { "hanzi": "我是学生。", "pinyin": "wǒ shì xué sheng.", "vi": "Tôi là học sinh." }
-      ]
-    },
-    {
-      "id": "hsk1-004", "hanzi": "他", "pinyin": "tā", "hanViet": "tha",
-      "meaningVi": "anh ấy, ông ấy, cậu ấy", "lessonId": "hsk1-l01", "mustWrite": true,
-      "examples": [
-        { "hanzi": "他是我朋友。", "pinyin": "tā shì wǒ péng you.", "vi": "Anh ấy là bạn tôi." }
-      ]
-    },
-    {
-      "id": "hsk1-005", "hanzi": "她", "pinyin": "tā", "hanViet": "tha",
-      "meaningVi": "cô ấy, chị ấy, bà ấy", "lessonId": "hsk1-l01", "mustWrite": true,
-      "examples": [
-        { "hanzi": "她是我妈妈。", "pinyin": "tā shì wǒ mā ma.", "vi": "Bà ấy là mẹ tôi." }
-      ]
-    },
-    {
-      "id": "hsk1-006", "hanzi": "是", "pinyin": "shì", "hanViet": "thị",
-      "meaningVi": "là, phải", "lessonId": "hsk1-l01", "mustWrite": true,
-      "examples": [
-        { "hanzi": "我是中国人。", "pinyin": "wǒ shì Zhōng guó rén.", "vi": "Tôi là người Trung Quốc." },
-        { "hanzi": "是的。", "pinyin": "shì de.", "vi": "Đúng vậy." }
-      ]
-    },
-    {
-      "id": "hsk1-007", "hanzi": "不", "pinyin": "bù", "hanViet": "bất",
-      "meaningVi": "không (phủ định)", "lessonId": "hsk1-l01", "mustWrite": true,
-      "examples": [
-        { "hanzi": "我不是老师。", "pinyin": "wǒ bú shì lǎo shī.", "vi": "Tôi không phải giáo viên." },
-        { "hanzi": "我不喝茶。", "pinyin": "wǒ bù hē chá.", "vi": "Tôi không uống trà." }
-      ]
-    },
-    {
-      "id": "hsk1-008", "hanzi": "谢谢", "pinyin": "xiè xie", "hanViet": "tạ tạ",
-      "meaningVi": "cảm ơn", "lessonId": "hsk1-l01", "mustWrite": false,
-      "examples": [
-        { "hanzi": "谢谢你！", "pinyin": "xiè xie nǐ!", "vi": "Cảm ơn bạn!" },
-        { "hanzi": "谢谢，老师。", "pinyin": "xiè xie, lǎo shī.", "vi": "Em cảm ơn thầy/cô." }
-      ]
-    },
-    {
-      "id": "hsk1-009", "hanzi": "再见", "pinyin": "zài jiàn", "hanViet": "tái kiến",
-      "meaningVi": "tạm biệt, hẹn gặp lại", "lessonId": "hsk1-l01", "mustWrite": false,
-      "examples": [
-        { "hanzi": "老师，再见！", "pinyin": "lǎo shī, zài jiàn!", "vi": "Em chào thầy/cô ạ!" }
-      ]
-    },
-    {
-      "id": "hsk1-010", "hanzi": "老师", "pinyin": "lǎo shī", "hanViet": "lão sư",
-      "meaningVi": "giáo viên, thầy giáo, cô giáo", "lessonId": "hsk1-l01", "mustWrite": false,
-      "examples": [
-        { "hanzi": "她是我的老师。", "pinyin": "tā shì wǒ de lǎo shī.", "vi": "Cô ấy là giáo viên của tôi." }
-      ]
-    },
-    {
-      "id": "hsk1-011", "hanzi": "一", "pinyin": "yī", "hanViet": "nhất",
-      "meaningVi": "một (số 1)", "lessonId": "hsk1-l02", "mustWrite": true,
-      "examples": [
-        { "hanzi": "一个人", "pinyin": "yí ge rén", "vi": "một người" },
-        { "hanzi": "我有一个儿子。", "pinyin": "wǒ yǒu yí ge ér zi.", "vi": "Tôi có một đứa con trai." }
-      ]
-    },
-    {
-      "id": "hsk1-012", "hanzi": "二", "pinyin": "èr", "hanViet": "nhị",
-      "meaningVi": "hai (số 2)", "lessonId": "hsk1-l02", "mustWrite": true,
-      "examples": [
-        { "hanzi": "二十", "pinyin": "èr shí", "vi": "hai mươi" }
-      ]
-    },
-    {
-      "id": "hsk1-013", "hanzi": "三", "pinyin": "sān", "hanViet": "tam",
-      "meaningVi": "ba (số 3)", "lessonId": "hsk1-l02", "mustWrite": true,
-      "examples": [
-        { "hanzi": "我家有三口人。", "pinyin": "wǒ jiā yǒu sān kǒu rén.", "vi": "Nhà tôi có ba người." }
-      ]
-    },
-    {
-      "id": "hsk1-014", "hanzi": "十", "pinyin": "shí", "hanViet": "thập",
-      "meaningVi": "mười (số 10)", "lessonId": "hsk1-l02", "mustWrite": true,
-      "examples": [
-        { "hanzi": "十三", "pinyin": "shí sān", "vi": "mười ba" }
-      ]
-    },
-    {
-      "id": "hsk1-015", "hanzi": "爸爸", "pinyin": "bà ba", "hanViet": "ba ba",
-      "meaningVi": "bố, ba", "lessonId": "hsk1-l02", "mustWrite": false,
-      "examples": [
-        { "hanzi": "我爸爸是老师。", "pinyin": "wǒ bà ba shì lǎo shī.", "vi": "Bố tôi là giáo viên." }
-      ]
-    },
-    {
-      "id": "hsk1-016", "hanzi": "妈妈", "pinyin": "mā ma", "hanViet": "ma ma",
-      "meaningVi": "mẹ, má", "lessonId": "hsk1-l02", "mustWrite": false,
-      "examples": [
-        { "hanzi": "妈妈，我爱你！", "pinyin": "mā ma, wǒ ài nǐ!", "vi": "Mẹ ơi, con yêu mẹ!" }
-      ]
-    },
-    {
-      "id": "hsk1-017", "hanzi": "儿子", "pinyin": "ér zi", "hanViet": "nhi tử",
-      "meaningVi": "con trai", "lessonId": "hsk1-l02", "mustWrite": false,
-      "examples": [
-        { "hanzi": "他是我儿子。", "pinyin": "tā shì wǒ ér zi.", "vi": "Nó là con trai tôi." }
-      ]
-    },
-    {
-      "id": "hsk1-018", "hanzi": "女儿", "pinyin": "nǚ ér", "hanViet": "nữ nhi",
-      "meaningVi": "con gái", "lessonId": "hsk1-l02", "mustWrite": false,
-      "examples": [
-        { "hanzi": "我女儿十岁。", "pinyin": "wǒ nǚ ér shí suì.", "vi": "Con gái tôi mười tuổi." }
-      ]
-    },
-    {
-      "id": "hsk1-019", "hanzi": "家", "pinyin": "jiā", "hanViet": "gia",
-      "meaningVi": "nhà, gia đình", "lessonId": "hsk1-l02", "mustWrite": true,
-      "examples": [
-        { "hanzi": "我家有四口人。", "pinyin": "wǒ jiā yǒu sì kǒu rén.", "vi": "Nhà tôi có bốn người." },
-        { "hanzi": "你家在哪儿？", "pinyin": "nǐ jiā zài nǎr?", "vi": "Nhà bạn ở đâu?" }
-      ]
-    },
-    {
-      "id": "hsk1-020", "hanzi": "人", "pinyin": "rén", "hanViet": "nhân",
-      "meaningVi": "người", "lessonId": "hsk1-l02", "mustWrite": true,
-      "examples": [
-        { "hanzi": "你是哪国人？", "pinyin": "nǐ shì nǎ guó rén?", "vi": "Bạn là người nước nào?" }
-      ]
-    },
-    {
-      "id": "hsk1-021", "hanzi": "吃", "pinyin": "chī", "hanViet": "ngật",
-      "meaningVi": "ăn", "lessonId": "hsk1-l03", "mustWrite": true,
-      "examples": [
-        { "hanzi": "你吃什么？", "pinyin": "nǐ chī shén me?", "vi": "Bạn ăn gì?" },
-        { "hanzi": "我吃米饭。", "pinyin": "wǒ chī mǐ fàn.", "vi": "Tôi ăn cơm." }
-      ]
-    },
-    {
-      "id": "hsk1-022", "hanzi": "喝", "pinyin": "hē", "hanViet": "hát",
-      "meaningVi": "uống", "lessonId": "hsk1-l03", "mustWrite": false,
-      "examples": [
-        { "hanzi": "你喝茶吗？", "pinyin": "nǐ hē chá ma?", "vi": "Bạn uống trà không?" }
-      ]
-    },
-    {
-      "id": "hsk1-023", "hanzi": "水", "pinyin": "shuǐ", "hanViet": "thủy",
-      "meaningVi": "nước", "lessonId": "hsk1-l03", "mustWrite": true,
-      "examples": [
-        { "hanzi": "我想喝水。", "pinyin": "wǒ xiǎng hē shuǐ.", "vi": "Tôi muốn uống nước." }
-      ]
-    },
-    {
-      "id": "hsk1-024", "hanzi": "茶", "pinyin": "chá", "hanViet": "trà",
-      "meaningVi": "trà, chè", "lessonId": "hsk1-l03", "mustWrite": false,
-      "examples": [
-        { "hanzi": "中国茶很好喝。", "pinyin": "Zhōng guó chá hěn hǎo hē.", "vi": "Trà Trung Quốc rất ngon." }
-      ]
-    },
-    {
-      "id": "hsk1-025", "hanzi": "米饭", "pinyin": "mǐ fàn", "hanViet": "mễ phạn",
-      "meaningVi": "cơm (gạo nấu chín)", "lessonId": "hsk1-l03", "mustWrite": false,
-      "examples": [
-        { "hanzi": "我喜欢吃米饭。", "pinyin": "wǒ xǐ huan chī mǐ fàn.", "vi": "Tôi thích ăn cơm." }
-      ]
-    },
-    {
-      "id": "hsk1-026", "hanzi": "中国", "pinyin": "Zhōng guó", "hanViet": "trung quốc",
-      "meaningVi": "Trung Quốc", "lessonId": "hsk1-l03", "mustWrite": false,
-      "examples": [
-        { "hanzi": "我是中国人。", "pinyin": "wǒ shì Zhōng guó rén.", "vi": "Tôi là người Trung Quốc." }
-      ]
-    },
-    {
-      "id": "hsk1-027", "hanzi": "学生", "pinyin": "xué sheng", "hanViet": "học sinh",
-      "meaningVi": "học sinh, sinh viên", "lessonId": "hsk1-l03", "mustWrite": false,
-      "examples": [
-        { "hanzi": "他不是学生。", "pinyin": "tā bú shì xué sheng.", "vi": "Anh ấy không phải sinh viên." }
-      ]
-    },
-    {
-      "id": "hsk1-028", "hanzi": "朋友", "pinyin": "péng you", "hanViet": "bằng hữu",
-      "meaningVi": "bạn bè, bạn", "lessonId": "hsk1-l03", "mustWrite": false,
-      "examples": [
-        { "hanzi": "她是我的好朋友。", "pinyin": "tā shì wǒ de hǎo péng you.", "vi": "Cô ấy là bạn thân của tôi." }
-      ]
-    },
-    {
-      "id": "hsk1-029", "hanzi": "喜欢", "pinyin": "xǐ huan", "hanViet": "hỉ hoan",
-      "meaningVi": "thích", "lessonId": "hsk1-l03", "mustWrite": false,
-      "examples": [
-        { "hanzi": "我喜欢喝茶。", "pinyin": "wǒ xǐ huan hē chá.", "vi": "Tôi thích uống trà." }
-      ]
-    },
-    {
-      "id": "hsk1-030", "hanzi": "什么", "pinyin": "shén me", "hanViet": "thập ma",
-      "meaningVi": "cái gì, gì", "lessonId": "hsk1-l03", "mustWrite": false,
-      "examples": [
-        { "hanzi": "这是什么？", "pinyin": "zhè shì shén me?", "vi": "Đây là cái gì?" },
-        { "hanzi": "你叫什么名字？", "pinyin": "nǐ jiào shén me míng zi?", "vi": "Bạn tên là gì?" }
-      ]
-    }
+    {"id": "hsk1-001", "hanzi": "你", "pinyin": "nǐ", "hanViet": "nhĩ", "meaningVi": "bạn, anh, chị (ngôi thứ hai số ít)", "lessonId": "hsk1-l01", "mustWrite": true, "examples": [{"hanzi": "你好！", "pinyin": "nǐ hǎo!", "vi": "Xin chào!"}, {"hanzi": "你是老师吗？", "pinyin": "nǐ shì lǎo shī ma?", "vi": "Bạn là giáo viên à?"}]},
+    {"id": "hsk1-002", "hanzi": "好", "pinyin": "hǎo", "hanViet": "hảo", "meaningVi": "tốt, khỏe, hay", "lessonId": "hsk1-l01", "mustWrite": true, "examples": [{"hanzi": "我很好。", "pinyin": "wǒ hěn hǎo.", "vi": "Tôi rất khỏe."}, {"hanzi": "好的。", "pinyin": "hǎo de.", "vi": "Được rồi."}]},
+    {"id": "hsk1-003", "hanzi": "我", "pinyin": "wǒ", "hanViet": "ngã", "meaningVi": "tôi, mình, tớ", "lessonId": "hsk1-l01", "mustWrite": true, "examples": [{"hanzi": "我是学生。", "pinyin": "wǒ shì xué sheng.", "vi": "Tôi là học sinh."}]},
+    {"id": "hsk1-004", "hanzi": "他", "pinyin": "tā", "hanViet": "tha", "meaningVi": "anh ấy, ông ấy, cậu ấy", "lessonId": "hsk1-l01", "mustWrite": true, "examples": [{"hanzi": "他是我朋友。", "pinyin": "tā shì wǒ péng you.", "vi": "Anh ấy là bạn tôi."}]},
+    {"id": "hsk1-005", "hanzi": "她", "pinyin": "tā", "hanViet": "tha", "meaningVi": "cô ấy, chị ấy, bà ấy", "lessonId": "hsk1-l01", "mustWrite": true, "examples": [{"hanzi": "她是我妈妈。", "pinyin": "tā shì wǒ mā ma.", "vi": "Bà ấy là mẹ tôi."}]},
+    {"id": "hsk1-006", "hanzi": "是", "pinyin": "shì", "hanViet": "thị", "meaningVi": "là, phải", "lessonId": "hsk1-l01", "mustWrite": true, "examples": [{"hanzi": "我是中国人。", "pinyin": "wǒ shì Zhōng guó rén.", "vi": "Tôi là người Trung Quốc."}, {"hanzi": "是的。", "pinyin": "shì de.", "vi": "Đúng vậy."}]},
+    {"id": "hsk1-007", "hanzi": "不", "pinyin": "bù", "hanViet": "bất", "meaningVi": "không (phủ định)", "lessonId": "hsk1-l01", "mustWrite": true, "examples": [{"hanzi": "我不是老师。", "pinyin": "wǒ bú shì lǎo shī.", "vi": "Tôi không phải giáo viên."}, {"hanzi": "我不喝茶。", "pinyin": "wǒ bù hē chá.", "vi": "Tôi không uống trà."}]},
+    {"id": "hsk1-008", "hanzi": "谢谢", "pinyin": "xiè xie", "hanViet": "tạ tạ", "meaningVi": "cảm ơn", "lessonId": "hsk1-l01", "mustWrite": false, "examples": [{"hanzi": "谢谢你！", "pinyin": "xiè xie nǐ!", "vi": "Cảm ơn bạn!"}, {"hanzi": "谢谢，老师。", "pinyin": "xiè xie, lǎo shī.", "vi": "Em cảm ơn thầy/cô."}]},
+    {"id": "hsk1-009", "hanzi": "再见", "pinyin": "zài jiàn", "hanViet": "tái kiến", "meaningVi": "tạm biệt, hẹn gặp lại", "lessonId": "hsk1-l01", "mustWrite": false, "examples": [{"hanzi": "老师，再见！", "pinyin": "lǎo shī, zài jiàn!", "vi": "Em chào thầy/cô ạ!"}]},
+    {"id": "hsk1-010", "hanzi": "老师", "pinyin": "lǎo shī", "hanViet": "lão sư", "meaningVi": "giáo viên, thầy giáo, cô giáo", "lessonId": "hsk1-l01", "mustWrite": false, "examples": [{"hanzi": "她是我的老师。", "pinyin": "tā shì wǒ de lǎo shī.", "vi": "Cô ấy là giáo viên của tôi."}]},
+    {"id": "hsk1-011", "hanzi": "一", "pinyin": "yī", "hanViet": "nhất", "meaningVi": "một (số 1)", "lessonId": "hsk1-l02", "mustWrite": true, "examples": [{"hanzi": "一个人", "pinyin": "yí ge rén", "vi": "một người"}, {"hanzi": "我有一个儿子。", "pinyin": "wǒ yǒu yí ge ér zi.", "vi": "Tôi có một đứa con trai."}]},
+    {"id": "hsk1-012", "hanzi": "二", "pinyin": "èr", "hanViet": "nhị", "meaningVi": "hai (số 2)", "lessonId": "hsk1-l02", "mustWrite": true, "examples": [{"hanzi": "二十", "pinyin": "èr shí", "vi": "hai mươi"}]},
+    {"id": "hsk1-013", "hanzi": "三", "pinyin": "sān", "hanViet": "tam", "meaningVi": "ba (số 3)", "lessonId": "hsk1-l02", "mustWrite": true, "examples": [{"hanzi": "我家有三口人。", "pinyin": "wǒ jiā yǒu sān kǒu rén.", "vi": "Nhà tôi có ba người."}]},
+    {"id": "hsk1-014", "hanzi": "十", "pinyin": "shí", "hanViet": "thập", "meaningVi": "mười (số 10)", "lessonId": "hsk1-l02", "mustWrite": true, "examples": [{"hanzi": "十三", "pinyin": "shí sān", "vi": "mười ba"}]},
+    {"id": "hsk1-015", "hanzi": "爸爸", "pinyin": "bà ba", "hanViet": "ba ba", "meaningVi": "bố, ba", "lessonId": "hsk1-l02", "mustWrite": false, "examples": [{"hanzi": "我爸爸是老师。", "pinyin": "wǒ bà ba shì lǎo shī.", "vi": "Bố tôi là giáo viên."}]},
+    {"id": "hsk1-016", "hanzi": "妈妈", "pinyin": "mā ma", "hanViet": "ma ma", "meaningVi": "mẹ, má", "lessonId": "hsk1-l02", "mustWrite": false, "examples": [{"hanzi": "妈妈，我爱你！", "pinyin": "mā ma, wǒ ài nǐ!", "vi": "Mẹ ơi, con yêu mẹ!"}]},
+    {"id": "hsk1-017", "hanzi": "儿子", "pinyin": "ér zi", "hanViet": "nhi tử", "meaningVi": "con trai", "lessonId": "hsk1-l02", "mustWrite": false, "examples": [{"hanzi": "他是我儿子。", "pinyin": "tā shì wǒ ér zi.", "vi": "Nó là con trai tôi."}]},
+    {"id": "hsk1-018", "hanzi": "女儿", "pinyin": "nǚ ér", "hanViet": "nữ nhi", "meaningVi": "con gái", "lessonId": "hsk1-l02", "mustWrite": false, "examples": [{"hanzi": "我女儿十岁。", "pinyin": "wǒ nǚ ér shí suì.", "vi": "Con gái tôi mười tuổi."}]},
+    {"id": "hsk1-019", "hanzi": "家", "pinyin": "jiā", "hanViet": "gia", "meaningVi": "nhà, gia đình", "lessonId": "hsk1-l02", "mustWrite": true, "examples": [{"hanzi": "我家有四口人。", "pinyin": "wǒ jiā yǒu sì kǒu rén.", "vi": "Nhà tôi có bốn người."}, {"hanzi": "你家在哪儿？", "pinyin": "nǐ jiā zài nǎr?", "vi": "Nhà bạn ở đâu?"}]},
+    {"id": "hsk1-020", "hanzi": "人", "pinyin": "rén", "hanViet": "nhân", "meaningVi": "người", "lessonId": "hsk1-l02", "mustWrite": true, "examples": [{"hanzi": "你是哪国人？", "pinyin": "nǐ shì nǎ guó rén?", "vi": "Bạn là người nước nào?"}]},
+    {"id": "hsk1-021", "hanzi": "吃", "pinyin": "chī", "hanViet": "ngật", "meaningVi": "ăn", "lessonId": "hsk1-l03", "mustWrite": true, "examples": [{"hanzi": "你吃什么？", "pinyin": "nǐ chī shén me?", "vi": "Bạn ăn gì?"}, {"hanzi": "我吃米饭。", "pinyin": "wǒ chī mǐ fàn.", "vi": "Tôi ăn cơm."}]},
+    {"id": "hsk1-022", "hanzi": "喝", "pinyin": "hē", "hanViet": "hát", "meaningVi": "uống", "lessonId": "hsk1-l03", "mustWrite": false, "examples": [{"hanzi": "你喝茶吗？", "pinyin": "nǐ hē chá ma?", "vi": "Bạn uống trà không?"}]},
+    {"id": "hsk1-023", "hanzi": "水", "pinyin": "shuǐ", "hanViet": "thủy", "meaningVi": "nước", "lessonId": "hsk1-l03", "mustWrite": true, "examples": [{"hanzi": "我想喝水。", "pinyin": "wǒ xiǎng hē shuǐ.", "vi": "Tôi muốn uống nước."}]},
+    {"id": "hsk1-024", "hanzi": "茶", "pinyin": "chá", "hanViet": "trà", "meaningVi": "trà, chè", "lessonId": "hsk1-l03", "mustWrite": false, "examples": [{"hanzi": "中国茶很好喝。", "pinyin": "Zhōng guó chá hěn hǎo hē.", "vi": "Trà Trung Quốc rất ngon."}]},
+    {"id": "hsk1-025", "hanzi": "米饭", "pinyin": "mǐ fàn", "hanViet": "mễ phạn", "meaningVi": "cơm (gạo nấu chín)", "lessonId": "hsk1-l03", "mustWrite": false, "examples": [{"hanzi": "我喜欢吃米饭。", "pinyin": "wǒ xǐ huan chī mǐ fàn.", "vi": "Tôi thích ăn cơm."}]},
+    {"id": "hsk1-026", "hanzi": "中国", "pinyin": "Zhōng guó", "hanViet": "trung quốc", "meaningVi": "Trung Quốc", "lessonId": "hsk1-l03", "mustWrite": false, "examples": [{"hanzi": "我是中国人。", "pinyin": "wǒ shì Zhōng guó rén.", "vi": "Tôi là người Trung Quốc."}]},
+    {"id": "hsk1-027", "hanzi": "学生", "pinyin": "xué sheng", "hanViet": "học sinh", "meaningVi": "học sinh, sinh viên", "lessonId": "hsk1-l03", "mustWrite": false, "examples": [{"hanzi": "他不是学生。", "pinyin": "tā bú shì xué sheng.", "vi": "Anh ấy không phải sinh viên."}]},
+    {"id": "hsk1-028", "hanzi": "朋友", "pinyin": "péng you", "hanViet": "bằng hữu", "meaningVi": "bạn bè, bạn", "lessonId": "hsk1-l03", "mustWrite": false, "examples": [{"hanzi": "她是我的好朋友。", "pinyin": "tā shì wǒ de hǎo péng you.", "vi": "Cô ấy là bạn thân của tôi."}]},
+    {"id": "hsk1-029", "hanzi": "喜欢", "pinyin": "xǐ huan", "hanViet": "hỉ hoan", "meaningVi": "thích", "lessonId": "hsk1-l03", "mustWrite": false, "examples": [{"hanzi": "我喜欢喝茶。", "pinyin": "wǒ xǐ huan hē chá.", "vi": "Tôi thích uống trà."}]},
+    {"id": "hsk1-030", "hanzi": "什么", "pinyin": "shén me", "hanViet": "thập ma", "meaningVi": "cái gì, gì", "lessonId": "hsk1-l03", "mustWrite": false, "examples": [{"hanzi": "这是什么？", "pinyin": "zhè shì shén me?", "vi": "Đây là cái gì?"}, {"hanzi": "你叫什么名字？", "pinyin": "nǐ jiào shén me míng zi?", "vi": "Bạn tên là gì?"}]},
+    {"id": "hsk1-031", "hanzi": "我们", "pinyin": "wǒ men", "hanViet": "ngã môn", "meaningVi": "chúng tôi, chúng ta", "lessonId": "hsk1-l04", "mustWrite": false, "examples": [{"hanzi": "我们是同学。", "pinyin": "wǒ men shì tóng xué.", "vi": "Chúng tôi là bạn học."}]},
+    {"id": "hsk1-032", "hanzi": "你们", "pinyin": "nǐ men", "hanViet": "nhĩ môn", "meaningVi": "các bạn", "lessonId": "hsk1-l04", "mustWrite": false, "examples": [{"hanzi": "你们好！", "pinyin": "nǐ men hǎo!", "vi": "Chào các bạn!"}]},
+    {"id": "hsk1-033", "hanzi": "他们", "pinyin": "tā men", "hanViet": "tha môn", "meaningVi": "họ, bọn họ (nam / chung)", "lessonId": "hsk1-l04", "mustWrite": false, "examples": [{"hanzi": "他们是我的朋友。", "pinyin": "tā men shì wǒ de péng you.", "vi": "Họ là bạn của tôi."}]},
+    {"id": "hsk1-034", "hanzi": "她们", "pinyin": "tā men", "hanViet": "tha môn", "meaningVi": "họ (nữ)", "lessonId": "hsk1-l04", "mustWrite": false, "examples": [{"hanzi": "她们都是老师。", "pinyin": "tā men dōu shì lǎo shī.", "vi": "Các cô ấy đều là giáo viên."}]},
+    {"id": "hsk1-035", "hanzi": "谁", "pinyin": "shéi", "hanViet": "thùy", "meaningVi": "ai", "lessonId": "hsk1-l04", "mustWrite": true, "examples": [{"hanzi": "他是谁？", "pinyin": "tā shì shéi?", "vi": "Anh ấy là ai?"}]},
+    {"id": "hsk1-036", "hanzi": "这", "pinyin": "zhè", "hanViet": "giá", "meaningVi": "này, đây", "lessonId": "hsk1-l04", "mustWrite": true, "examples": [{"hanzi": "这是我的书。", "pinyin": "zhè shì wǒ de shū.", "vi": "Đây là sách của tôi."}]},
+    {"id": "hsk1-037", "hanzi": "那", "pinyin": "nà", "hanViet": "na", "meaningVi": "kia, đó", "lessonId": "hsk1-l04", "mustWrite": true, "examples": [{"hanzi": "那是谁的杯子？", "pinyin": "nà shì shéi de bēi zi?", "vi": "Kia là cốc của ai?"}]},
+    {"id": "hsk1-038", "hanzi": "哪", "pinyin": "nǎ", "hanViet": "na", "meaningVi": "nào", "lessonId": "hsk1-l04", "mustWrite": true, "examples": [{"hanzi": "你是哪国人？", "pinyin": "nǐ shì nǎ guó rén?", "vi": "Bạn là người nước nào?"}]},
+    {"id": "hsk1-039", "hanzi": "的", "pinyin": "de", "hanViet": "đích", "meaningVi": "của (trợ từ sở hữu)", "lessonId": "hsk1-l04", "mustWrite": true, "examples": [{"hanzi": "这是我的。", "pinyin": "zhè shì wǒ de.", "vi": "Cái này là của tôi."}]},
+    {"id": "hsk1-040", "hanzi": "吗", "pinyin": "ma", "hanViet": "ma", "meaningVi": "không? (trợ từ nghi vấn)", "lessonId": "hsk1-l04", "mustWrite": false, "examples": [{"hanzi": "你好吗？", "pinyin": "nǐ hǎo ma?", "vi": "Bạn khỏe không?"}]},
+    {"id": "hsk1-041", "hanzi": "呢", "pinyin": "ne", "hanViet": "ni", "meaningVi": "thì sao? còn…? (trợ từ)", "lessonId": "hsk1-l04", "mustWrite": false, "examples": [{"hanzi": "我很好，你呢？", "pinyin": "wǒ hěn hǎo, nǐ ne?", "vi": "Tôi khỏe, còn bạn?"}]},
+    {"id": "hsk1-042", "hanzi": "四", "pinyin": "sì", "hanViet": "tứ", "meaningVi": "bốn (số 4)", "lessonId": "hsk1-l05", "mustWrite": true, "examples": [{"hanzi": "我家有四口人。", "pinyin": "wǒ jiā yǒu sì kǒu rén.", "vi": "Nhà tôi có bốn người."}]},
+    {"id": "hsk1-043", "hanzi": "五", "pinyin": "wǔ", "hanViet": "ngũ", "meaningVi": "năm (số 5)", "lessonId": "hsk1-l05", "mustWrite": true, "examples": [{"hanzi": "五个苹果", "pinyin": "wǔ ge píng guǒ", "vi": "năm quả táo"}]},
+    {"id": "hsk1-044", "hanzi": "六", "pinyin": "liù", "hanViet": "lục", "meaningVi": "sáu (số 6)", "lessonId": "hsk1-l05", "mustWrite": true, "examples": [{"hanzi": "我女儿六岁。", "pinyin": "wǒ nǚ ér liù suì.", "vi": "Con gái tôi sáu tuổi."}]},
+    {"id": "hsk1-045", "hanzi": "七", "pinyin": "qī", "hanViet": "thất", "meaningVi": "bảy (số 7)", "lessonId": "hsk1-l05", "mustWrite": true, "examples": [{"hanzi": "七个学生", "pinyin": "qī ge xué sheng", "vi": "bảy học sinh"}]},
+    {"id": "hsk1-046", "hanzi": "八", "pinyin": "bā", "hanViet": "bát", "meaningVi": "tám (số 8)", "lessonId": "hsk1-l05", "mustWrite": true, "examples": [{"hanzi": "现在八点。", "pinyin": "xiàn zài bā diǎn.", "vi": "Bây giờ là tám giờ."}]},
+    {"id": "hsk1-047", "hanzi": "九", "pinyin": "jiǔ", "hanViet": "cửu", "meaningVi": "chín (số 9)", "lessonId": "hsk1-l05", "mustWrite": true, "examples": [{"hanzi": "九月", "pinyin": "jiǔ yuè", "vi": "tháng chín"}]},
+    {"id": "hsk1-048", "hanzi": "零", "pinyin": "líng", "hanViet": "linh", "meaningVi": "không (số 0)", "lessonId": "hsk1-l05", "mustWrite": false, "examples": [{"hanzi": "二零二六年", "pinyin": "èr líng èr liù nián", "vi": "năm 2026"}]},
+    {"id": "hsk1-049", "hanzi": "几", "pinyin": "jǐ", "hanViet": "kỷ", "meaningVi": "mấy (hỏi số lượng nhỏ)", "lessonId": "hsk1-l05", "mustWrite": true, "examples": [{"hanzi": "你几岁？", "pinyin": "nǐ jǐ suì?", "vi": "Con mấy tuổi?"}]},
+    {"id": "hsk1-050", "hanzi": "岁", "pinyin": "suì", "hanViet": "tuế", "meaningVi": "tuổi", "lessonId": "hsk1-l05", "mustWrite": true, "examples": [{"hanzi": "我二十岁。", "pinyin": "wǒ èr shí suì.", "vi": "Tôi hai mươi tuổi."}]},
+    {"id": "hsk1-051", "hanzi": "多少", "pinyin": "duō shao", "hanViet": "đa thiểu", "meaningVi": "bao nhiêu", "lessonId": "hsk1-l05", "mustWrite": false, "examples": [{"hanzi": "你们学校有多少学生？", "pinyin": "nǐ men xué xiào yǒu duō shao xué sheng?", "vi": "Trường các bạn có bao nhiêu học sinh?"}]},
+    {"id": "hsk1-052", "hanzi": "个", "pinyin": "gè", "hanViet": "cá", "meaningVi": "cái, chiếc (lượng từ chung)", "lessonId": "hsk1-l05", "mustWrite": true, "examples": [{"hanzi": "三个人", "pinyin": "sān ge rén", "vi": "ba người"}]},
+    {"id": "hsk1-053", "hanzi": "今天", "pinyin": "jīn tiān", "hanViet": "kim thiên", "meaningVi": "hôm nay", "lessonId": "hsk1-l06", "mustWrite": false, "examples": [{"hanzi": "今天星期几？", "pinyin": "jīn tiān xīng qī jǐ?", "vi": "Hôm nay thứ mấy?"}]},
+    {"id": "hsk1-054", "hanzi": "明天", "pinyin": "míng tiān", "hanViet": "minh thiên", "meaningVi": "ngày mai", "lessonId": "hsk1-l06", "mustWrite": false, "examples": [{"hanzi": "明天见！", "pinyin": "míng tiān jiàn!", "vi": "Mai gặp nhé!"}]},
+    {"id": "hsk1-055", "hanzi": "昨天", "pinyin": "zuó tiān", "hanViet": "tạc thiên", "meaningVi": "hôm qua", "lessonId": "hsk1-l06", "mustWrite": false, "examples": [{"hanzi": "昨天我去商店了。", "pinyin": "zuó tiān wǒ qù shāng diàn le.", "vi": "Hôm qua tôi đã đi cửa hàng."}]},
+    {"id": "hsk1-056", "hanzi": "年", "pinyin": "nián", "hanViet": "niên", "meaningVi": "năm", "lessonId": "hsk1-l06", "mustWrite": true, "examples": [{"hanzi": "今年是二零二六年。", "pinyin": "jīn nián shì èr líng èr liù nián.", "vi": "Năm nay là năm 2026."}]},
+    {"id": "hsk1-057", "hanzi": "月", "pinyin": "yuè", "hanViet": "nguyệt", "meaningVi": "tháng; mặt trăng", "lessonId": "hsk1-l06", "mustWrite": true, "examples": [{"hanzi": "今天几月几号？", "pinyin": "jīn tiān jǐ yuè jǐ hào?", "vi": "Hôm nay ngày mấy tháng mấy?"}]},
+    {"id": "hsk1-058", "hanzi": "日", "pinyin": "rì", "hanViet": "nhật", "meaningVi": "ngày; mặt trời", "lessonId": "hsk1-l06", "mustWrite": true, "examples": [{"hanzi": "十月一日", "pinyin": "shí yuè yī rì", "vi": "ngày 1 tháng 10"}]},
+    {"id": "hsk1-059", "hanzi": "星期", "pinyin": "xīng qī", "hanViet": "tinh kỳ", "meaningVi": "tuần; thứ (trong tuần)", "lessonId": "hsk1-l06", "mustWrite": false, "examples": [{"hanzi": "今天星期一。", "pinyin": "jīn tiān xīng qī yī.", "vi": "Hôm nay thứ Hai."}]},
+    {"id": "hsk1-060", "hanzi": "现在", "pinyin": "xiàn zài", "hanViet": "hiện tại", "meaningVi": "bây giờ", "lessonId": "hsk1-l06", "mustWrite": false, "examples": [{"hanzi": "现在几点？", "pinyin": "xiàn zài jǐ diǎn?", "vi": "Bây giờ mấy giờ?"}]},
+    {"id": "hsk1-061", "hanzi": "时候", "pinyin": "shí hou", "hanViet": "thời hậu", "meaningVi": "lúc, khi", "lessonId": "hsk1-l06", "mustWrite": false, "examples": [{"hanzi": "你什么时候回家？", "pinyin": "nǐ shén me shí hou huí jiā?", "vi": "Khi nào bạn về nhà?"}]},
+    {"id": "hsk1-062", "hanzi": "了", "pinyin": "le", "hanViet": "liễu", "meaningVi": "rồi, đã (trợ từ hoàn thành)", "lessonId": "hsk1-l06", "mustWrite": true, "examples": [{"hanzi": "我吃饭了。", "pinyin": "wǒ chī fàn le.", "vi": "Tôi ăn cơm rồi."}]},
+    {"id": "hsk1-063", "hanzi": "点", "pinyin": "diǎn", "hanViet": "điểm", "meaningVi": "giờ; điểm", "lessonId": "hsk1-l07", "mustWrite": true, "examples": [{"hanzi": "我七点起床。", "pinyin": "wǒ qī diǎn qǐ chuáng.", "vi": "Tôi dậy lúc bảy giờ."}]},
+    {"id": "hsk1-064", "hanzi": "分钟", "pinyin": "fēn zhōng", "hanViet": "phân chung", "meaningVi": "phút", "lessonId": "hsk1-l07", "mustWrite": false, "examples": [{"hanzi": "等我五分钟。", "pinyin": "děng wǒ wǔ fēn zhōng.", "vi": "Đợi tôi năm phút."}]},
+    {"id": "hsk1-065", "hanzi": "上午", "pinyin": "shàng wǔ", "hanViet": "thượng ngọ", "meaningVi": "buổi sáng", "lessonId": "hsk1-l07", "mustWrite": false, "examples": [{"hanzi": "上午我去学校。", "pinyin": "shàng wǔ wǒ qù xué xiào.", "vi": "Buổi sáng tôi đi học."}]},
+    {"id": "hsk1-066", "hanzi": "中午", "pinyin": "zhōng wǔ", "hanViet": "trung ngọ", "meaningVi": "buổi trưa", "lessonId": "hsk1-l07", "mustWrite": false, "examples": [{"hanzi": "中午你吃什么？", "pinyin": "zhōng wǔ nǐ chī shén me?", "vi": "Buổi trưa bạn ăn gì?"}]},
+    {"id": "hsk1-067", "hanzi": "下午", "pinyin": "xià wǔ", "hanViet": "hạ ngọ", "meaningVi": "buổi chiều", "lessonId": "hsk1-l07", "mustWrite": false, "examples": [{"hanzi": "下午三点见。", "pinyin": "xià wǔ sān diǎn jiàn.", "vi": "Ba giờ chiều gặp nhé."}]},
+    {"id": "hsk1-068", "hanzi": "睡觉", "pinyin": "shuì jiào", "hanViet": "thụy giác", "meaningVi": "đi ngủ", "lessonId": "hsk1-l07", "mustWrite": false, "examples": [{"hanzi": "我十一点睡觉。", "pinyin": "wǒ shí yī diǎn shuì jiào.", "vi": "Tôi đi ngủ lúc mười một giờ."}]},
+    {"id": "hsk1-069", "hanzi": "工作", "pinyin": "gōng zuò", "hanViet": "công tác", "meaningVi": "làm việc; công việc", "lessonId": "hsk1-l07", "mustWrite": false, "examples": [{"hanzi": "我爸爸在医院工作。", "pinyin": "wǒ bà ba zài yī yuàn gōng zuò.", "vi": "Bố tôi làm việc ở bệnh viện."}]},
+    {"id": "hsk1-070", "hanzi": "学习", "pinyin": "xué xí", "hanViet": "học tập", "meaningVi": "học, học tập", "lessonId": "hsk1-l07", "mustWrite": false, "examples": [{"hanzi": "我学习汉语。", "pinyin": "wǒ xué xí hàn yǔ.", "vi": "Tôi học tiếng Trung."}]},
+    {"id": "hsk1-071", "hanzi": "做", "pinyin": "zuò", "hanViet": "tố", "meaningVi": "làm", "lessonId": "hsk1-l07", "mustWrite": true, "examples": [{"hanzi": "你在做什么？", "pinyin": "nǐ zài zuò shén me?", "vi": "Bạn đang làm gì?"}]},
+    {"id": "hsk1-072", "hanzi": "很", "pinyin": "hěn", "hanViet": "ngận", "meaningVi": "rất", "lessonId": "hsk1-l07", "mustWrite": true, "examples": [{"hanzi": "我很高兴。", "pinyin": "wǒ hěn gāo xìng.", "vi": "Tôi rất vui."}]},
+    {"id": "hsk1-073", "hanzi": "学校", "pinyin": "xué xiào", "hanViet": "học hiệu", "meaningVi": "trường học", "lessonId": "hsk1-l08", "mustWrite": false, "examples": [{"hanzi": "我们的学校很大。", "pinyin": "wǒ men de xué xiào hěn dà.", "vi": "Trường chúng tôi rất lớn."}]},
+    {"id": "hsk1-074", "hanzi": "饭店", "pinyin": "fàn diàn", "hanViet": "phạn điếm", "meaningVi": "nhà hàng; khách sạn", "lessonId": "hsk1-l08", "mustWrite": false, "examples": [{"hanzi": "我们去饭店吃饭吧。", "pinyin": "wǒ men qù fàn diàn chī fàn ba.", "vi": "Chúng ta đi nhà hàng ăn nhé."}]},
+    {"id": "hsk1-075", "hanzi": "商店", "pinyin": "shāng diàn", "hanViet": "thương điếm", "meaningVi": "cửa hàng", "lessonId": "hsk1-l08", "mustWrite": false, "examples": [{"hanzi": "商店在哪儿？", "pinyin": "shāng diàn zài nǎr?", "vi": "Cửa hàng ở đâu?"}]},
+    {"id": "hsk1-076", "hanzi": "医院", "pinyin": "yī yuàn", "hanViet": "y viện", "meaningVi": "bệnh viện", "lessonId": "hsk1-l08", "mustWrite": false, "examples": [{"hanzi": "他在医院。", "pinyin": "tā zài yī yuàn.", "vi": "Anh ấy ở bệnh viện."}]},
+    {"id": "hsk1-077", "hanzi": "火车站", "pinyin": "huǒ chē zhàn", "hanViet": "hỏa xa trạm", "meaningVi": "ga tàu hỏa", "lessonId": "hsk1-l08", "mustWrite": false, "examples": [{"hanzi": "我去火车站。", "pinyin": "wǒ qù huǒ chē zhàn.", "vi": "Tôi đi ga tàu."}]},
+    {"id": "hsk1-078", "hanzi": "北京", "pinyin": "Běi jīng", "hanViet": "bắc kinh", "meaningVi": "Bắc Kinh", "lessonId": "hsk1-l08", "mustWrite": false, "examples": [{"hanzi": "我住在北京。", "pinyin": "wǒ zhù zài Běi jīng.", "vi": "Tôi sống ở Bắc Kinh."}]},
+    {"id": "hsk1-079", "hanzi": "在", "pinyin": "zài", "hanViet": "tại", "meaningVi": "ở; đang", "lessonId": "hsk1-l08", "mustWrite": true, "examples": [{"hanzi": "我在家。", "pinyin": "wǒ zài jiā.", "vi": "Tôi ở nhà."}]},
+    {"id": "hsk1-080", "hanzi": "住", "pinyin": "zhù", "hanViet": "trú", "meaningVi": "ở, sống", "lessonId": "hsk1-l08", "mustWrite": true, "examples": [{"hanzi": "你住在哪儿？", "pinyin": "nǐ zhù zài nǎr?", "vi": "Bạn sống ở đâu?"}]},
+    {"id": "hsk1-081", "hanzi": "去", "pinyin": "qù", "hanViet": "khứ", "meaningVi": "đi", "lessonId": "hsk1-l08", "mustWrite": true, "examples": [{"hanzi": "你去哪儿？", "pinyin": "nǐ qù nǎr?", "vi": "Bạn đi đâu?"}]},
+    {"id": "hsk1-082", "hanzi": "来", "pinyin": "lái", "hanViet": "lai", "meaningVi": "đến, tới", "lessonId": "hsk1-l08", "mustWrite": true, "examples": [{"hanzi": "你来我家吧。", "pinyin": "nǐ lái wǒ jiā ba.", "vi": "Bạn đến nhà tôi đi."}]},
+    {"id": "hsk1-083", "hanzi": "回", "pinyin": "huí", "hanViet": "hồi", "meaningVi": "về, trở về", "lessonId": "hsk1-l08", "mustWrite": true, "examples": [{"hanzi": "我回家了。", "pinyin": "wǒ huí jiā le.", "vi": "Tôi về nhà rồi."}]},
+    {"id": "hsk1-084", "hanzi": "上", "pinyin": "shàng", "hanViet": "thượng", "meaningVi": "trên", "lessonId": "hsk1-l09", "mustWrite": true, "examples": [{"hanzi": "书在桌子上。", "pinyin": "shū zài zhuō zi shàng.", "vi": "Sách ở trên bàn."}]},
+    {"id": "hsk1-085", "hanzi": "下", "pinyin": "xià", "hanViet": "hạ", "meaningVi": "dưới", "lessonId": "hsk1-l09", "mustWrite": true, "examples": [{"hanzi": "猫在椅子下。", "pinyin": "māo zài yǐ zi xià.", "vi": "Con mèo ở dưới ghế."}]},
+    {"id": "hsk1-086", "hanzi": "前面", "pinyin": "qián miàn", "hanViet": "tiền diện", "meaningVi": "phía trước", "lessonId": "hsk1-l09", "mustWrite": false, "examples": [{"hanzi": "学校前面有一个商店。", "pinyin": "xué xiào qián miàn yǒu yí ge shāng diàn.", "vi": "Phía trước trường có một cửa hàng."}]},
+    {"id": "hsk1-087", "hanzi": "后面", "pinyin": "hòu miàn", "hanViet": "hậu diện", "meaningVi": "phía sau", "lessonId": "hsk1-l09", "mustWrite": false, "examples": [{"hanzi": "医院在学校后面。", "pinyin": "yī yuàn zài xué xiào hòu miàn.", "vi": "Bệnh viện ở phía sau trường."}]},
+    {"id": "hsk1-088", "hanzi": "里", "pinyin": "lǐ", "hanViet": "lý", "meaningVi": "trong", "lessonId": "hsk1-l09", "mustWrite": true, "examples": [{"hanzi": "杯子里有水。", "pinyin": "bēi zi lǐ yǒu shuǐ.", "vi": "Trong cốc có nước."}]},
+    {"id": "hsk1-089", "hanzi": "桌子", "pinyin": "zhuō zi", "hanViet": "trác tử", "meaningVi": "cái bàn", "lessonId": "hsk1-l09", "mustWrite": false, "examples": [{"hanzi": "这是我的桌子。", "pinyin": "zhè shì wǒ de zhuō zi.", "vi": "Đây là bàn của tôi."}]},
+    {"id": "hsk1-090", "hanzi": "椅子", "pinyin": "yǐ zi", "hanViet": "ỷ tử", "meaningVi": "cái ghế", "lessonId": "hsk1-l09", "mustWrite": false, "examples": [{"hanzi": "请坐这个椅子。", "pinyin": "qǐng zuò zhè ge yǐ zi.", "vi": "Mời ngồi ghế này."}]},
+    {"id": "hsk1-091", "hanzi": "杯子", "pinyin": "bēi zi", "hanViet": "bôi tử", "meaningVi": "cái cốc, cái ly", "lessonId": "hsk1-l09", "mustWrite": false, "examples": [{"hanzi": "我的杯子在哪儿？", "pinyin": "wǒ de bēi zi zài nǎr?", "vi": "Cốc của tôi đâu rồi?"}]},
+    {"id": "hsk1-092", "hanzi": "书", "pinyin": "shū", "hanViet": "thư", "meaningVi": "sách", "lessonId": "hsk1-l09", "mustWrite": true, "examples": [{"hanzi": "这本书很好。", "pinyin": "zhè běn shū hěn hǎo.", "vi": "Cuốn sách này rất hay."}]},
+    {"id": "hsk1-093", "hanzi": "有", "pinyin": "yǒu", "hanViet": "hữu", "meaningVi": "có", "lessonId": "hsk1-l09", "mustWrite": true, "examples": [{"hanzi": "我有一个朋友。", "pinyin": "wǒ yǒu yí ge péng you.", "vi": "Tôi có một người bạn."}]},
+    {"id": "hsk1-094", "hanzi": "没", "pinyin": "méi", "hanViet": "một", "meaningVi": "không (có); chưa", "lessonId": "hsk1-l09", "mustWrite": true, "examples": [{"hanzi": "我没有钱。", "pinyin": "wǒ méi yǒu qián.", "vi": "Tôi không có tiền."}]},
+    {"id": "hsk1-095", "hanzi": "买", "pinyin": "mǎi", "hanViet": "mãi", "meaningVi": "mua", "lessonId": "hsk1-l10", "mustWrite": true, "examples": [{"hanzi": "我想买水果。", "pinyin": "wǒ xiǎng mǎi shuǐ guǒ.", "vi": "Tôi muốn mua hoa quả."}]},
+    {"id": "hsk1-096", "hanzi": "钱", "pinyin": "qián", "hanViet": "tiền", "meaningVi": "tiền", "lessonId": "hsk1-l10", "mustWrite": true, "examples": [{"hanzi": "这个多少钱？", "pinyin": "zhè ge duō shao qián?", "vi": "Cái này bao nhiêu tiền?"}]},
+    {"id": "hsk1-097", "hanzi": "块", "pinyin": "kuài", "hanViet": "khối", "meaningVi": "đồng (đơn vị tiền); miếng", "lessonId": "hsk1-l10", "mustWrite": false, "examples": [{"hanzi": "三块钱", "pinyin": "sān kuài qián", "vi": "ba đồng"}]},
+    {"id": "hsk1-098", "hanzi": "本", "pinyin": "běn", "hanViet": "bản", "meaningVi": "quyển, cuốn (lượng từ)", "lessonId": "hsk1-l10", "mustWrite": true, "examples": [{"hanzi": "一本书", "pinyin": "yì běn shū", "vi": "một quyển sách"}]},
+    {"id": "hsk1-099", "hanzi": "些", "pinyin": "xiē", "hanViet": "ta", "meaningVi": "một vài, một số", "lessonId": "hsk1-l10", "mustWrite": false, "examples": [{"hanzi": "我买了一些苹果。", "pinyin": "wǒ mǎi le yì xiē píng guǒ.", "vi": "Tôi đã mua một ít táo."}]},
+    {"id": "hsk1-100", "hanzi": "东西", "pinyin": "dōng xi", "hanViet": "đông tây", "meaningVi": "đồ vật, đồ", "lessonId": "hsk1-l10", "mustWrite": false, "examples": [{"hanzi": "你买什么东西？", "pinyin": "nǐ mǎi shén me dōng xi?", "vi": "Bạn mua đồ gì?"}]},
+    {"id": "hsk1-101", "hanzi": "衣服", "pinyin": "yī fu", "hanViet": "y phục", "meaningVi": "quần áo", "lessonId": "hsk1-l10", "mustWrite": false, "examples": [{"hanzi": "这件衣服很漂亮。", "pinyin": "zhè jiàn yī fu hěn piào liang.", "vi": "Bộ quần áo này rất đẹp."}]},
+    {"id": "hsk1-102", "hanzi": "水果", "pinyin": "shuǐ guǒ", "hanViet": "thủy quả", "meaningVi": "hoa quả, trái cây", "lessonId": "hsk1-l10", "mustWrite": false, "examples": [{"hanzi": "我喜欢吃水果。", "pinyin": "wǒ xǐ huan chī shuǐ guǒ.", "vi": "Tôi thích ăn hoa quả."}]},
+    {"id": "hsk1-103", "hanzi": "苹果", "pinyin": "píng guǒ", "hanViet": "bình quả", "meaningVi": "quả táo", "lessonId": "hsk1-l10", "mustWrite": false, "examples": [{"hanzi": "苹果多少钱一斤？", "pinyin": "píng guǒ duō shao qián yì jīn?", "vi": "Táo bao nhiêu tiền một cân?"}]},
+    {"id": "hsk1-104", "hanzi": "菜", "pinyin": "cài", "hanViet": "thái", "meaningVi": "món ăn; rau", "lessonId": "hsk1-l10", "mustWrite": false, "examples": [{"hanzi": "这个菜很好吃。", "pinyin": "zhè ge cài hěn hǎo chī.", "vi": "Món này rất ngon."}]},
+    {"id": "hsk1-105", "hanzi": "医生", "pinyin": "yī shēng", "hanViet": "y sinh", "meaningVi": "bác sĩ", "lessonId": "hsk1-l11", "mustWrite": false, "examples": [{"hanzi": "我妈妈是医生。", "pinyin": "wǒ mā ma shì yī shēng.", "vi": "Mẹ tôi là bác sĩ."}]},
+    {"id": "hsk1-106", "hanzi": "先生", "pinyin": "xiān sheng", "hanViet": "tiên sinh", "meaningVi": "ông, ngài; chồng", "lessonId": "hsk1-l11", "mustWrite": false, "examples": [{"hanzi": "王先生，你好！", "pinyin": "Wáng xiān sheng, nǐ hǎo!", "vi": "Chào ông Vương!"}]},
+    {"id": "hsk1-107", "hanzi": "小姐", "pinyin": "xiǎo jiě", "hanViet": "tiểu thư", "meaningVi": "cô (gọi phụ nữ trẻ)", "lessonId": "hsk1-l11", "mustWrite": false, "examples": [{"hanzi": "李小姐是老师。", "pinyin": "Lǐ xiǎo jiě shì lǎo shī.", "vi": "Cô Lý là giáo viên."}]},
+    {"id": "hsk1-108", "hanzi": "同学", "pinyin": "tóng xué", "hanViet": "đồng học", "meaningVi": "bạn học", "lessonId": "hsk1-l11", "mustWrite": false, "examples": [{"hanzi": "他是我的同学。", "pinyin": "tā shì wǒ de tóng xué.", "vi": "Cậu ấy là bạn học của tôi."}]},
+    {"id": "hsk1-109", "hanzi": "名字", "pinyin": "míng zi", "hanViet": "danh tự", "meaningVi": "tên", "lessonId": "hsk1-l11", "mustWrite": false, "examples": [{"hanzi": "你叫什么名字？", "pinyin": "nǐ jiào shén me míng zi?", "vi": "Bạn tên là gì?"}]},
+    {"id": "hsk1-110", "hanzi": "叫", "pinyin": "jiào", "hanViet": "khiếu", "meaningVi": "gọi, tên là", "lessonId": "hsk1-l11", "mustWrite": true, "examples": [{"hanzi": "我叫大卫。", "pinyin": "wǒ jiào Dà wèi.", "vi": "Tôi tên là David."}]},
+    {"id": "hsk1-111", "hanzi": "认识", "pinyin": "rèn shi", "hanViet": "nhận thức", "meaningVi": "quen, quen biết", "lessonId": "hsk1-l11", "mustWrite": false, "examples": [{"hanzi": "认识你很高兴。", "pinyin": "rèn shi nǐ hěn gāo xìng.", "vi": "Rất vui được làm quen với bạn."}]},
+    {"id": "hsk1-112", "hanzi": "高兴", "pinyin": "gāo xìng", "hanViet": "cao hứng", "meaningVi": "vui, vui mừng", "lessonId": "hsk1-l11", "mustWrite": false, "examples": [{"hanzi": "今天我很高兴。", "pinyin": "jīn tiān wǒ hěn gāo xìng.", "vi": "Hôm nay tôi rất vui."}]},
+    {"id": "hsk1-113", "hanzi": "和", "pinyin": "hé", "hanViet": "hòa", "meaningVi": "và, với", "lessonId": "hsk1-l11", "mustWrite": true, "examples": [{"hanzi": "我和妈妈去商店。", "pinyin": "wǒ hé mā ma qù shāng diàn.", "vi": "Tôi và mẹ đi cửa hàng."}]},
+    {"id": "hsk1-114", "hanzi": "都", "pinyin": "dōu", "hanViet": "đô", "meaningVi": "đều", "lessonId": "hsk1-l11", "mustWrite": false, "examples": [{"hanzi": "我们都是学生。", "pinyin": "wǒ men dōu shì xué sheng.", "vi": "Chúng tôi đều là học sinh."}]},
+    {"id": "hsk1-115", "hanzi": "坐", "pinyin": "zuò", "hanViet": "tọa", "meaningVi": "ngồi; đi (xe, tàu…)", "lessonId": "hsk1-l12", "mustWrite": true, "examples": [{"hanzi": "我坐飞机去北京。", "pinyin": "wǒ zuò fēi jī qù Běi jīng.", "vi": "Tôi đi máy bay đến Bắc Kinh."}]},
+    {"id": "hsk1-116", "hanzi": "开", "pinyin": "kāi", "hanViet": "khai", "meaningVi": "mở; lái (xe)", "lessonId": "hsk1-l12", "mustWrite": true, "examples": [{"hanzi": "他会开车。", "pinyin": "tā huì kāi chē.", "vi": "Anh ấy biết lái xe."}]},
+    {"id": "hsk1-117", "hanzi": "飞机", "pinyin": "fēi jī", "hanViet": "phi cơ", "meaningVi": "máy bay", "lessonId": "hsk1-l12", "mustWrite": false, "examples": [{"hanzi": "飞机几点到？", "pinyin": "fēi jī jǐ diǎn dào?", "vi": "Máy bay mấy giờ đến?"}]},
+    {"id": "hsk1-118", "hanzi": "出租车", "pinyin": "chū zū chē", "hanViet": "xuất tô xa", "meaningVi": "xe taxi", "lessonId": "hsk1-l12", "mustWrite": false, "examples": [{"hanzi": "我们坐出租车去吧。", "pinyin": "wǒ men zuò chū zū chē qù ba.", "vi": "Chúng ta đi taxi nhé."}]},
+    {"id": "hsk1-119", "hanzi": "打电话", "pinyin": "dǎ diàn huà", "hanViet": "đả điện thoại", "meaningVi": "gọi điện thoại", "lessonId": "hsk1-l12", "mustWrite": false, "examples": [{"hanzi": "我给妈妈打电话。", "pinyin": "wǒ gěi mā ma dǎ diàn huà.", "vi": "Tôi gọi điện cho mẹ."}]},
+    {"id": "hsk1-120", "hanzi": "喂", "pinyin": "wèi", "hanViet": "úy", "meaningVi": "a lô (nghe điện thoại)", "lessonId": "hsk1-l12", "mustWrite": false, "examples": [{"hanzi": "喂，你好！", "pinyin": "wèi, nǐ hǎo!", "vi": "A lô, xin chào!"}]},
+    {"id": "hsk1-121", "hanzi": "请", "pinyin": "qǐng", "hanViet": "thỉnh", "meaningVi": "mời; xin, làm ơn", "lessonId": "hsk1-l12", "mustWrite": true, "examples": [{"hanzi": "请坐！", "pinyin": "qǐng zuò!", "vi": "Mời ngồi!"}]},
+    {"id": "hsk1-122", "hanzi": "对不起", "pinyin": "duì bu qǐ", "hanViet": "đối bất khởi", "meaningVi": "xin lỗi", "lessonId": "hsk1-l12", "mustWrite": false, "examples": [{"hanzi": "对不起，我来晚了。", "pinyin": "duì bu qǐ, wǒ lái wǎn le.", "vi": "Xin lỗi, tôi đến muộn."}]},
+    {"id": "hsk1-123", "hanzi": "没关系", "pinyin": "méi guān xi", "hanViet": "một quan hệ", "meaningVi": "không sao", "lessonId": "hsk1-l12", "mustWrite": false, "examples": [{"hanzi": "没关系！", "pinyin": "méi guān xi!", "vi": "Không sao đâu!"}]},
+    {"id": "hsk1-124", "hanzi": "不客气", "pinyin": "bú kè qi", "hanViet": "bất khách khí", "meaningVi": "không có gì (đáp lời cảm ơn)", "lessonId": "hsk1-l12", "mustWrite": false, "examples": [{"hanzi": "谢谢！——不客气。", "pinyin": "xiè xie! —— bú kè qi.", "vi": "Cảm ơn! — Không có gì."}]},
+    {"id": "hsk1-125", "hanzi": "天气", "pinyin": "tiān qì", "hanViet": "thiên khí", "meaningVi": "thời tiết", "lessonId": "hsk1-l13", "mustWrite": false, "examples": [{"hanzi": "今天天气很好。", "pinyin": "jīn tiān tiān qì hěn hǎo.", "vi": "Hôm nay thời tiết rất đẹp."}]},
+    {"id": "hsk1-126", "hanzi": "冷", "pinyin": "lěng", "hanViet": "lãnh", "meaningVi": "lạnh", "lessonId": "hsk1-l13", "mustWrite": true, "examples": [{"hanzi": "北京很冷。", "pinyin": "Běi jīng hěn lěng.", "vi": "Bắc Kinh rất lạnh."}]},
+    {"id": "hsk1-127", "hanzi": "热", "pinyin": "rè", "hanViet": "nhiệt", "meaningVi": "nóng", "lessonId": "hsk1-l13", "mustWrite": true, "examples": [{"hanzi": "今天太热了！", "pinyin": "jīn tiān tài rè le!", "vi": "Hôm nay nóng quá!"}]},
+    {"id": "hsk1-128", "hanzi": "下雨", "pinyin": "xià yǔ", "hanViet": "hạ vũ", "meaningVi": "mưa", "lessonId": "hsk1-l13", "mustWrite": false, "examples": [{"hanzi": "明天会下雨吗？", "pinyin": "míng tiān huì xià yǔ ma?", "vi": "Ngày mai có mưa không?"}]},
+    {"id": "hsk1-129", "hanzi": "大", "pinyin": "dà", "hanViet": "đại", "meaningVi": "to, lớn", "lessonId": "hsk1-l13", "mustWrite": true, "examples": [{"hanzi": "这个苹果很大。", "pinyin": "zhè ge píng guǒ hěn dà.", "vi": "Quả táo này rất to."}]},
+    {"id": "hsk1-130", "hanzi": "小", "pinyin": "xiǎo", "hanViet": "tiểu", "meaningVi": "nhỏ, bé", "lessonId": "hsk1-l13", "mustWrite": true, "examples": [{"hanzi": "我的家很小。", "pinyin": "wǒ de jiā hěn xiǎo.", "vi": "Nhà tôi rất nhỏ."}]},
+    {"id": "hsk1-131", "hanzi": "多", "pinyin": "duō", "hanViet": "đa", "meaningVi": "nhiều", "lessonId": "hsk1-l13", "mustWrite": true, "examples": [{"hanzi": "商店里人很多。", "pinyin": "shāng diàn lǐ rén hěn duō.", "vi": "Trong cửa hàng rất đông người."}]},
+    {"id": "hsk1-132", "hanzi": "少", "pinyin": "shǎo", "hanViet": "thiểu", "meaningVi": "ít", "lessonId": "hsk1-l13", "mustWrite": true, "examples": [{"hanzi": "学校里人很少。", "pinyin": "xué xiào lǐ rén hěn shǎo.", "vi": "Trong trường rất ít người."}]},
+    {"id": "hsk1-133", "hanzi": "太", "pinyin": "tài", "hanViet": "thái", "meaningVi": "quá, lắm", "lessonId": "hsk1-l13", "mustWrite": false, "examples": [{"hanzi": "太好了！", "pinyin": "tài hǎo le!", "vi": "Tốt quá!"}]},
+    {"id": "hsk1-134", "hanzi": "漂亮", "pinyin": "piào liang", "hanViet": "phiêu lượng", "meaningVi": "đẹp, xinh", "lessonId": "hsk1-l13", "mustWrite": false, "examples": [{"hanzi": "她很漂亮。", "pinyin": "tā hěn piào liang.", "vi": "Cô ấy rất xinh."}]},
+    {"id": "hsk1-135", "hanzi": "看", "pinyin": "kàn", "hanViet": "khán", "meaningVi": "xem, nhìn", "lessonId": "hsk1-l14", "mustWrite": true, "examples": [{"hanzi": "我喜欢看书。", "pinyin": "wǒ xǐ huan kàn shū.", "vi": "Tôi thích đọc sách."}]},
+    {"id": "hsk1-136", "hanzi": "听", "pinyin": "tīng", "hanViet": "thính", "meaningVi": "nghe", "lessonId": "hsk1-l14", "mustWrite": true, "examples": [{"hanzi": "你听，下雨了。", "pinyin": "nǐ tīng, xià yǔ le.", "vi": "Bạn nghe xem, mưa rồi."}]},
+    {"id": "hsk1-137", "hanzi": "读", "pinyin": "dú", "hanViet": "độc", "meaningVi": "đọc", "lessonId": "hsk1-l14", "mustWrite": false, "examples": [{"hanzi": "请读这个字。", "pinyin": "qǐng dú zhè ge zì.", "vi": "Hãy đọc chữ này."}]},
+    {"id": "hsk1-138", "hanzi": "写", "pinyin": "xiě", "hanViet": "tả", "meaningVi": "viết", "lessonId": "hsk1-l14", "mustWrite": true, "examples": [{"hanzi": "我会写汉字。", "pinyin": "wǒ huì xiě hàn zì.", "vi": "Tôi biết viết chữ Hán."}]},
+    {"id": "hsk1-139", "hanzi": "说话", "pinyin": "shuō huà", "hanViet": "thuyết thoại", "meaningVi": "nói chuyện", "lessonId": "hsk1-l14", "mustWrite": false, "examples": [{"hanzi": "请不要说话。", "pinyin": "qǐng bú yào shuō huà.", "vi": "Xin đừng nói chuyện."}]},
+    {"id": "hsk1-140", "hanzi": "看见", "pinyin": "kàn jiàn", "hanViet": "khán kiến", "meaningVi": "nhìn thấy", "lessonId": "hsk1-l14", "mustWrite": false, "examples": [{"hanzi": "你看见我的猫了吗？", "pinyin": "nǐ kàn jiàn wǒ de māo le ma?", "vi": "Bạn có thấy con mèo của tôi không?"}]},
+    {"id": "hsk1-141", "hanzi": "电视", "pinyin": "diàn shì", "hanViet": "điện thị", "meaningVi": "ti vi", "lessonId": "hsk1-l14", "mustWrite": false, "examples": [{"hanzi": "爸爸在看电视。", "pinyin": "bà ba zài kàn diàn shì.", "vi": "Bố đang xem ti vi."}]},
+    {"id": "hsk1-142", "hanzi": "电脑", "pinyin": "diàn nǎo", "hanViet": "điện não", "meaningVi": "máy tính", "lessonId": "hsk1-l14", "mustWrite": false, "examples": [{"hanzi": "我的电脑很新。", "pinyin": "wǒ de diàn nǎo hěn xīn.", "vi": "Máy tính của tôi rất mới."}]},
+    {"id": "hsk1-143", "hanzi": "电影", "pinyin": "diàn yǐng", "hanViet": "điện ảnh", "meaningVi": "phim, điện ảnh", "lessonId": "hsk1-l14", "mustWrite": false, "examples": [{"hanzi": "我们去看电影吧。", "pinyin": "wǒ men qù kàn diàn yǐng ba.", "vi": "Chúng ta đi xem phim nhé."}]},
+    {"id": "hsk1-144", "hanzi": "猫", "pinyin": "māo", "hanViet": "miêu", "meaningVi": "con mèo", "lessonId": "hsk1-l14", "mustWrite": false, "examples": [{"hanzi": "我家有一只猫。", "pinyin": "wǒ jiā yǒu yì zhī māo.", "vi": "Nhà tôi có một con mèo."}]},
+    {"id": "hsk1-145", "hanzi": "狗", "pinyin": "gǒu", "hanViet": "cẩu", "meaningVi": "con chó", "lessonId": "hsk1-l14", "mustWrite": false, "examples": [{"hanzi": "那只狗很大。", "pinyin": "nà zhī gǒu hěn dà.", "vi": "Con chó kia rất to."}]},
+    {"id": "hsk1-146", "hanzi": "爱", "pinyin": "ài", "hanViet": "ái", "meaningVi": "yêu", "lessonId": "hsk1-l14", "mustWrite": true, "examples": [{"hanzi": "我爱我的家。", "pinyin": "wǒ ài wǒ de jiā.", "vi": "Tôi yêu gia đình tôi."}]},
+    {"id": "hsk1-147", "hanzi": "汉语", "pinyin": "hàn yǔ", "hanViet": "hán ngữ", "meaningVi": "tiếng Hán, tiếng Trung", "lessonId": "hsk1-l15", "mustWrite": false, "examples": [{"hanzi": "我会说汉语。", "pinyin": "wǒ huì shuō hàn yǔ.", "vi": "Tôi biết nói tiếng Trung."}]},
+    {"id": "hsk1-148", "hanzi": "字", "pinyin": "zì", "hanViet": "tự", "meaningVi": "chữ", "lessonId": "hsk1-l15", "mustWrite": true, "examples": [{"hanzi": "这个字怎么读？", "pinyin": "zhè ge zì zěn me dú?", "vi": "Chữ này đọc thế nào?"}]},
+    {"id": "hsk1-149", "hanzi": "会", "pinyin": "huì", "hanViet": "hội", "meaningVi": "biết (làm gì); sẽ", "lessonId": "hsk1-l15", "mustWrite": true, "examples": [{"hanzi": "你会说汉语吗？", "pinyin": "nǐ huì shuō hàn yǔ ma?", "vi": "Bạn biết nói tiếng Trung không?"}]},
+    {"id": "hsk1-150", "hanzi": "能", "pinyin": "néng", "hanViet": "năng", "meaningVi": "có thể", "lessonId": "hsk1-l15", "mustWrite": true, "examples": [{"hanzi": "我能坐这儿吗？", "pinyin": "wǒ néng zuò zhèr ma?", "vi": "Tôi ngồi đây được không?"}]},
+    {"id": "hsk1-151", "hanzi": "想", "pinyin": "xiǎng", "hanViet": "tưởng", "meaningVi": "muốn; nghĩ; nhớ", "lessonId": "hsk1-l15", "mustWrite": true, "examples": [{"hanzi": "我想去中国。", "pinyin": "wǒ xiǎng qù Zhōng guó.", "vi": "Tôi muốn đi Trung Quốc."}]},
+    {"id": "hsk1-152", "hanzi": "怎么", "pinyin": "zěn me", "hanViet": "chẩm ma", "meaningVi": "thế nào, sao", "lessonId": "hsk1-l15", "mustWrite": false, "examples": [{"hanzi": "你怎么去学校？", "pinyin": "nǐ zěn me qù xué xiào?", "vi": "Bạn đến trường bằng cách nào?"}]},
+    {"id": "hsk1-153", "hanzi": "怎么样", "pinyin": "zěn me yàng", "hanViet": "chẩm ma dạng", "meaningVi": "thế nào (hỏi ý kiến)", "lessonId": "hsk1-l15", "mustWrite": false, "examples": [{"hanzi": "你的汉语怎么样？", "pinyin": "nǐ de hàn yǔ zěn me yàng?", "vi": "Tiếng Trung của bạn thế nào?"}]}
   ]
 }

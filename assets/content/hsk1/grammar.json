@@ -1,12 +1,9 @@
 {
-  "contentVersion": 1,
+  "contentVersion": 2,
   "level": 1,
   "items": [
     {
-      "id": "hsk1-g01",
-      "lessonId": "hsk1-l01",
-      "title": "Câu chữ 是",
-      "pattern": "A + 是 + B",
+      "id": "hsk1-g01", "lessonId": "hsk1-l01", "title": "Câu chữ 是", "pattern": "A + 是 + B",
       "explanationVi": "Dùng 是 (shì) để nói \"A là B\". Phủ định bằng 不是 (bú shì).",
       "examples": [
         { "hanzi": "我是学生。", "pinyin": "wǒ shì xué sheng.", "vi": "Tôi là học sinh." },
@@ -14,13 +11,110 @@
       ]
     },
     {
-      "id": "hsk1-g02",
-      "lessonId": "hsk1-l01",
-      "title": "Câu hỏi với 吗",
-      "pattern": "Câu trần thuật + 吗？",
+      "id": "hsk1-g02", "lessonId": "hsk1-l01", "title": "Câu hỏi với 吗", "pattern": "Câu trần thuật + 吗？",
       "explanationVi": "Thêm 吗 (ma) vào cuối câu trần thuật để tạo câu hỏi có/không.",
       "examples": [
         { "hanzi": "你是老师吗？", "pinyin": "nǐ shì lǎo shī ma?", "vi": "Bạn là giáo viên à?" }
+      ]
+    },
+    {
+      "id": "hsk1-g03", "lessonId": "hsk1-l02", "title": "Câu chữ 有", "pattern": "A + 有 + B",
+      "explanationVi": "有 (yǒu) nghĩa là \"có\". Phủ định luôn dùng 没有 (méi yǒu), không dùng 不有.",
+      "examples": [
+        { "hanzi": "我有一个儿子。", "pinyin": "wǒ yǒu yí ge ér zi.", "vi": "Tôi có một con trai." },
+        { "hanzi": "我没有女儿。", "pinyin": "wǒ méi yǒu nǚ ér.", "vi": "Tôi không có con gái." }
+      ]
+    },
+    {
+      "id": "hsk1-g04", "lessonId": "hsk1-l03", "title": "Động từ 喜欢", "pattern": "Chủ ngữ + 喜欢 + (động từ) + tân ngữ",
+      "explanationVi": "喜欢 (xǐ huan) = thích. Có thể đi với danh từ hoặc với một hành động.",
+      "examples": [
+        { "hanzi": "我喜欢茶。", "pinyin": "wǒ xǐ huan chá.", "vi": "Tôi thích trà." },
+        { "hanzi": "我喜欢吃米饭。", "pinyin": "wǒ xǐ huan chī mǐ fàn.", "vi": "Tôi thích ăn cơm." }
+      ]
+    },
+    {
+      "id": "hsk1-g05", "lessonId": "hsk1-l04", "title": "Trợ từ sở hữu 的", "pattern": "Người/vật + 的 + danh từ",
+      "explanationVi": "的 (de) tương đương \"của\" nhưng đứng TRƯỚC danh từ. Với người thân, quan hệ gần có thể bỏ 的: 我妈妈.",
+      "examples": [
+        { "hanzi": "这是我的书。", "pinyin": "zhè shì wǒ de shū.", "vi": "Đây là sách của tôi." },
+        { "hanzi": "她是我妈妈。", "pinyin": "tā shì wǒ mā ma.", "vi": "Bà ấy là mẹ tôi." }
+      ]
+    },
+    {
+      "id": "hsk1-g06", "lessonId": "hsk1-l05", "title": "Số + lượng từ + danh từ", "pattern": "数 + 个 + N",
+      "explanationVi": "Trong tiếng Trung, giữa số và danh từ phải có lượng từ. 个 (ge) là lượng từ thông dụng nhất. Trước lượng từ, 二 đổi thành 两 (liǎng).",
+      "examples": [
+        { "hanzi": "三个学生", "pinyin": "sān ge xué sheng", "vi": "ba học sinh" },
+        { "hanzi": "你有几个朋友？", "pinyin": "nǐ yǒu jǐ ge péng you?", "vi": "Bạn có mấy người bạn?" }
+      ]
+    },
+    {
+      "id": "hsk1-g07", "lessonId": "hsk1-l06", "title": "Cách nói ngày tháng", "pattern": "年 → 月 → 日/号 → 星期",
+      "explanationVi": "Thứ tự từ lớn đến nhỏ: năm, tháng, ngày, thứ. Hỏi bằng 几: 几月几号？ 星期几？",
+      "examples": [
+        { "hanzi": "今天九月一号，星期二。", "pinyin": "jīn tiān jiǔ yuè yī hào, xīng qī èr.", "vi": "Hôm nay mùng 1 tháng 9, thứ Ba." }
+      ]
+    },
+    {
+      "id": "hsk1-g08", "lessonId": "hsk1-l07", "title": "Thời gian đứng trước động từ", "pattern": "Chủ ngữ + thời gian + động từ",
+      "explanationVi": "Khác tiếng Việt, mốc thời gian thường đứng TRƯỚC động từ (hoặc đầu câu).",
+      "examples": [
+        { "hanzi": "我八点工作。", "pinyin": "wǒ bā diǎn gōng zuò.", "vi": "Tôi làm việc lúc tám giờ." },
+        { "hanzi": "下午我学习汉语。", "pinyin": "xià wǔ wǒ xué xí hàn yǔ.", "vi": "Buổi chiều tôi học tiếng Trung." }
+      ]
+    },
+    {
+      "id": "hsk1-g09", "lessonId": "hsk1-l08", "title": "在 + nơi chốn", "pattern": "Chủ ngữ + 在 + nơi chốn (+ động từ)",
+      "explanationVi": "在 (zài) = ở. Khi có hành động, cụm 在 + nơi chốn đứng TRƯỚC động từ.",
+      "examples": [
+        { "hanzi": "我在家。", "pinyin": "wǒ zài jiā.", "vi": "Tôi ở nhà." },
+        { "hanzi": "我在学校学习。", "pinyin": "wǒ zài xué xiào xué xí.", "vi": "Tôi học ở trường." }
+      ]
+    },
+    {
+      "id": "hsk1-g10", "lessonId": "hsk1-l09", "title": "Từ chỉ phương vị", "pattern": "Danh từ + 上 / 下 / 里 / 前面 / 后面",
+      "explanationVi": "Từ chỉ vị trí đứng SAU danh từ: 桌子上 = trên bàn, 杯子里 = trong cốc.",
+      "examples": [
+        { "hanzi": "猫在桌子下。", "pinyin": "māo zài zhuō zi xià.", "vi": "Con mèo ở dưới bàn." }
+      ]
+    },
+    {
+      "id": "hsk1-g11", "lessonId": "hsk1-l10", "title": "Hỏi giá với 多少钱", "pattern": "N + 多少钱？",
+      "explanationVi": "Hỏi giá: 这个多少钱？ Trả lời: số + 块 (钱).",
+      "examples": [
+        { "hanzi": "这个多少钱？", "pinyin": "zhè ge duō shao qián?", "vi": "Cái này bao nhiêu tiền?" },
+        { "hanzi": "十块钱。", "pinyin": "shí kuài qián.", "vi": "Mười đồng." }
+      ]
+    },
+    {
+      "id": "hsk1-g12", "lessonId": "hsk1-l11", "title": "Phó từ 都", "pattern": "Chủ ngữ (số nhiều) + 都 + động từ",
+      "explanationVi": "都 (dōu) = đều, đứng sau chủ ngữ và trước động từ.",
+      "examples": [
+        { "hanzi": "我们都是学生。", "pinyin": "wǒ men dōu shì xué sheng.", "vi": "Chúng tôi đều là học sinh." }
+      ]
+    },
+    {
+      "id": "hsk1-g13", "lessonId": "hsk1-l12", "title": "坐 + phương tiện", "pattern": "坐 + phương tiện + 去 + nơi chốn",
+      "explanationVi": "Đi bằng phương tiện gì: 坐 (zuò) + phương tiện, đặt trước 去.",
+      "examples": [
+        { "hanzi": "我坐出租车去饭店。", "pinyin": "wǒ zuò chū zū chē qù fàn diàn.", "vi": "Tôi đi taxi đến nhà hàng." }
+      ]
+    },
+    {
+      "id": "hsk1-g14", "lessonId": "hsk1-l13", "title": "Câu vị ngữ tính từ & 太…了", "pattern": "Chủ ngữ + 很 + tính từ / 太 + tính từ + 了",
+      "explanationVi": "Tính từ làm vị ngữ không cần 是, thường thêm 很. 太…了 diễn tả \"quá\".",
+      "examples": [
+        { "hanzi": "她很漂亮。", "pinyin": "tā hěn piào liang.", "vi": "Cô ấy rất xinh." },
+        { "hanzi": "太冷了！", "pinyin": "tài lěng le!", "vi": "Lạnh quá!" }
+      ]
+    },
+    {
+      "id": "hsk1-g15", "lessonId": "hsk1-l15", "title": "Động từ năng nguyện 会 / 能 / 想", "pattern": "Chủ ngữ + 会/能/想 + động từ",
+      "explanationVi": "会: biết (do học mà có). 能: có thể (điều kiện cho phép). 想: muốn.",
+      "examples": [
+        { "hanzi": "我会说汉语。", "pinyin": "wǒ huì shuō hàn yǔ.", "vi": "Tôi biết nói tiếng Trung." },
+        { "hanzi": "我想去北京。", "pinyin": "wǒ xiǎng qù Běi jīng.", "vi": "Tôi muốn đi Bắc Kinh." }
       ]
     }
   ]

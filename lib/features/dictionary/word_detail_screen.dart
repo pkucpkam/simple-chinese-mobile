@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
+
+import '../../app/routes.dart';
 
 import '../../app/strings.dart';
 import '../../app/theme/app_theme.dart';
@@ -91,6 +94,15 @@ class _WordDetailBodyState extends ConsumerState<_WordDetailBody> {
         ),
         const SizedBox(height: 12),
         _AddToDeckButton(wordId: w.id),
+        const SizedBox(height: 8),
+        SizedBox(
+          width: double.infinity,
+          child: OutlinedButton.icon(
+            onPressed: () => context.push(Routes.write(w.id)),
+            icon: const Icon(Icons.edit_rounded),
+            label: const Text(S.practiceWriting),
+          ),
+        ),
         const SizedBox(height: 16),
 
         // --- Hán Việt + nghĩa

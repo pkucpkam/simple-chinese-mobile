@@ -75,6 +75,7 @@ class SessionBuilder {
         switch (item.card.skill) {
           CardSkill.listen => ExerciseType.listenChoice,
           CardSkill.tone => ExerciseType.toneChoice,
+          CardSkill.write => ExerciseType.write,
           _ => ExerciseType.meaningChoice,
         },
         pool,
@@ -84,6 +85,7 @@ class SessionBuilder {
     return switch (type) {
       ExerciseType.flashcard => FlashcardTask(item),
       ExerciseType.typePinyin => TypePinyinTask(item),
+      ExerciseType.write => WriteTask(item),
       ExerciseType.toneChoice =>
         ToneChoiceTask(item, toneVariants(item.word.pinyin, _random.nextInt)),
       ExerciseType.listenChoice ||

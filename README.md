@@ -63,6 +63,17 @@ trong sách giáo khoa (`bú shì`, `yí ge`).
   nghe chọn chữ; thẻ thanh → chọn pinyin đúng thanh. Chấm tự động: sai = Again, đúng nhưng > 8 giây = Hard, đúng nhanh = Good.
 - Bản debug có mục **Công cụ dev** trong tab Tôi để tua thời gian, dùng để thử lịch ôn.
 
+## Bài học & viết chữ
+
+- HSK1 gồm 15 bài / 153 từ. Mỗi bài 5 bước: Từ mới → Ngữ pháp → Hội thoại → Luyện tập
+  → Kiểm tra (10 câu). Đạt từ 80% thì mở khoá bài sau và từ của bài tự vào bộ thẻ ôn
+  tập (từ cần viết có thêm thẻ **viết**).
+- `lessons.json` chứa hội thoại và câu đã tách từ (`sentences.tokens`) cho bài sắp xếp câu.
+- Viết chữ: dữ liệu nét từ Make Me a Hanzi (`assets/strokes/<mã hex>.json`, giấy phép
+  Arphic — xem `assets/strokes/COPYING`). Sinh lại khi thêm nội dung:
+  `python tool/gen_strokes.py <graphics.txt>`.
+- Ba chế độ trên ô 米字格: Xem (animation thứ tự nét), Tập tô, Viết từ trí nhớ (chấm điểm).
+
 ## Phát âm
 
 - `assets/pronunciation/syllables.json`: bảng pinyin (392 âm tiết, ~1090 tổ hợp âm

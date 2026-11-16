@@ -119,6 +119,52 @@ abstract final class S {
   static const sandhiNote =
       'Lưu ý: hai thanh 3 đứng liền nhau, thanh 3 đầu đọc thành thanh 2 (nǐ hǎo → ní hǎo).';
 
+  // Viết chữ
+  static const writingTitle = 'Luyện viết';
+  static const practiceWriting = 'Luyện viết';
+  static const modeWatch = 'Xem';
+  static const modeTrace = 'Tập tô';
+  static const modeRecall = 'Viết';
+  static const noStrokeData = 'Chưa có dữ liệu nét cho chữ này';
+  static const writeFromMemory = 'Viết chữ Hán cho từ';
+  static const traceHint = 'Tô theo chữ mờ, đúng thứ tự nét';
+  static const recallHint = 'Viết từ trí nhớ — sai 3 lần sẽ có gợi ý';
+  static const watchHint = 'Xem thứ tự nét, bấm ↻ để xem lại';
+  static String writingScore(int s) => 'Điểm: $s/100';
+  static const hint = 'Gợi ý';
+  static const writeAgain = 'Viết lại';
+  static String writingPadLabel(String c) => 'Khung viết chữ $c';
+  static String charOf(int i, int n) => 'Chữ $i/$n';
+
+  // Sắp xếp câu
+  static const orderSentence = 'Sắp xếp thành câu đúng';
+  static const clear = 'Xoá';
+
+  // Bài học
+  static const lessonLocked = 'Hoàn thành bài trước (≥ 80%) để mở khoá';
+  static const startLesson = 'Bắt đầu học';
+  static const reviewLesson = 'Học lại';
+  static String bestScore(int s) => 'Điểm cao nhất: $s%';
+  static const stepVocab = 'Từ mới';
+  static const stepGrammar = 'Ngữ pháp';
+  static const stepDialogue = 'Hội thoại';
+  static const stepPractice = 'Luyện tập';
+  static const stepQuiz = 'Kiểm tra';
+  static const next = 'Tiếp';
+  static const startQuiz = 'Làm bài kiểm tra';
+  static const noGrammar = 'Bài này không có điểm ngữ pháp mới. Ôn lại mẫu câu trong hội thoại nhé!';
+  static const quitLessonTitle = 'Thoát bài học?';
+  static const quitLessonBody = 'Tiến độ của lần học này sẽ không được lưu.';
+  static const lessonPassed = 'Qua bài!';
+  static const lessonFailed = 'Chưa đạt';
+  static String lessonScore(int s) => '$s%';
+  static String needScore(int s) => 'Cần đạt từ $s% để qua bài';
+  static const wordsAddedToDeck = 'Từ của bài đã được thêm vào bộ thẻ ôn tập';
+  static const nextLessonUnlocked = 'Đã mở khoá bài tiếp theo!';
+  static const retryQuiz = 'Làm lại bài kiểm tra';
+  static const backToPath = 'Về lộ trình';
+  static String xpGained(int xp) => '+$xp XP';
+
   // Cài đặt học
   static const studySettings = 'Học tập';
   static const dailyNewLimit = 'Thẻ mới mỗi ngày';

@@ -11,6 +11,11 @@ abstract final class Routes {
   static String session(String mode) => '/session/$mode';
   static String word(String id) => '/word/$id';
 
+  static const lessonPattern = '/lesson/:id';
+  static String lesson(String id) => '/lesson/$id';
+  static const writePattern = '/write/:id';
+  static String write(String wordId) => '/write/$wordId';
+
   static const pronunciation = '/pronunciation';
   static const pinyinChart = '/pronunciation/chart';
   static const drillPattern = '/pronunciation/drill/:kind';

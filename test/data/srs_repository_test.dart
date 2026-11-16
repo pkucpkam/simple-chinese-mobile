@@ -6,6 +6,7 @@ import 'package:simple_chinese/data/db/app_database.dart';
 import 'package:simple_chinese/data/models/srs_card.dart';
 import 'package:simple_chinese/data/repositories/settings_repository.dart';
 import 'package:simple_chinese/data/repositories/srs_repository.dart';
+import 'package:simple_chinese/data/repositories/word_repository.dart';
 import 'package:simple_chinese/data/srs/srs_scheduler.dart';
 
 void main() {
@@ -52,6 +53,17 @@ void main() {
     expect(cards, hasLength(6));
     expect(cards.map((c) => c.skill).toSet(),
         {CardSkill.read, CardSkill.listen, CardSkill.tone});
+  });
+
+  test('addWordsForStudy: từ cần viết có thêm thẻ viết', () async {
+    final rows = await (db.select(db.words)..where((t) => t.id.isIn(['w0', 'w1']))).get();
+    final words = [
+      for (final r in rows) WordRepository.toWord(r).copyWith(mustWrite: r.id == 'w0'),
+    ];
+    await repo.addWordsForStudy(words);
+    final cards = await db.select(db.cards).get();
+    expect(cards, hasLength(7));
+    expect(cards.where((c) => c.skill == CardSkill.write).single.wordId, 'w0');
   });
 
   test('hàng đợi tôn trọng giới hạn thẻ mới mỗi ngày', () async {

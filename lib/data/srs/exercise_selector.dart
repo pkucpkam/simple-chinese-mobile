@@ -20,10 +20,10 @@ enum ExerciseType {
   /// Nghe một từ, chọn cách viết pinyin có thanh đúng trong 4 phương án.
   toneChoice,
 
-  /// Viết chữ từ trí nhớ (Sprint 3).
+  /// Viết chữ từ trí nhớ (thẻ kỹ năng viết).
   write,
 
-  /// Sắp xếp câu (Sprint 3).
+  /// Sắp xếp câu (dùng trong bài học).
   sentenceOrder,
 }
 
@@ -40,6 +40,7 @@ class ExerciseSelector {
     ExerciseType.matching,
     ExerciseType.typePinyin,
     ExerciseType.toneChoice,
+    ExerciseType.write,
   };
 
   /// Dưới ngưỡng này (ngày) coi là thẻ yếu.

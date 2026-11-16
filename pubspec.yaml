@@ -82,6 +82,7 @@ flutter:
   assets:
     - assets/content/hsk1/
     - assets/pronunciation/
+    - assets/strokes/
 
   fonts:
     - family: BeVietnamPro

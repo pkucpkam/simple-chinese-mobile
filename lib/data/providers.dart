@@ -8,6 +8,8 @@ import 'repositories/lesson_repository.dart';
 import 'repositories/pronunciation_repository.dart';
 import 'repositories/settings_repository.dart';
 import 'repositories/srs_repository.dart';
+import 'repositories/stats_repository.dart';
+import 'repositories/stroke_repository.dart';
 import 'repositories/word_repository.dart';
 
 part 'providers.g.dart';
@@ -33,8 +35,18 @@ WordRepository wordRepository(Ref ref) =>
     WordRepository(ref.watch(appDatabaseProvider));
 
 @Riverpod(keepAlive: true)
-LessonRepository lessonRepository(Ref ref) =>
-    LessonRepository(ref.watch(appDatabaseProvider));
+StatsRepository statsRepository(Ref ref) =>
+    StatsRepository(ref.watch(appDatabaseProvider));
+
+@Riverpod(keepAlive: true)
+LessonRepository lessonRepository(Ref ref) => LessonRepository(
+      ref.watch(appDatabaseProvider),
+      srs: ref.watch(srsRepositoryProvider),
+      stats: ref.watch(statsRepositoryProvider),
+    );
+
+@Riverpod(keepAlive: true)
+StrokeRepository strokeRepository(Ref ref) => StrokeRepository();
 
 @Riverpod(keepAlive: true)
 SettingsRepository settingsRepository(Ref ref) =>
@@ -44,6 +56,7 @@ SettingsRepository settingsRepository(Ref ref) =>
 SrsRepository srsRepository(Ref ref) => SrsRepository(
       ref.watch(appDatabaseProvider),
       ref.watch(settingsRepositoryProvider),
+      stats: ref.watch(statsRepositoryProvider),
     );
 
 @Riverpod(keepAlive: true)

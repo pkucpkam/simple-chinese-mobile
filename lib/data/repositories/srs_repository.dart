@@ -4,8 +4,10 @@ import '../../core/utils/clock.dart';
 import '../../core/utils/dates.dart';
 import '../db/app_database.dart';
 import '../models/srs_card.dart';
+import '../models/word.dart';
 import '../srs/srs_scheduler.dart';
 import 'settings_repository.dart';
+import 'stats_repository.dart';
 import 'word_repository.dart';
 
 /// Bộ thẻ ôn tập: thêm thẻ, dựng hàng đợi, ghi kết quả ôn theo FSRS.
@@ -14,20 +16,32 @@ class SrsRepository {
     this._db,
     this._settings, {
     SrsScheduler? scheduler,
+    StatsRepository? stats,
     DateTime Function()? clock,
   })  : _scheduler = scheduler ?? SrsScheduler(),
-        _now = clock ?? AppClock.now;
+        _now = clock ?? AppClock.now,
+        _stats = stats ?? StatsRepository(_db, clock: clock);
 
   final AppDatabase _db;
   final SettingsRepository _settings;
   final SrsScheduler _scheduler;
+  final StatsRepository _stats;
   final DateTime Function() _now;
 
   SrsScheduler get scheduler => _scheduler;
 
   /// Kỹ năng mặc định được tạo khi thêm một từ vào bộ thẻ.
-  /// (Thẻ write cho từ mustWrite sẽ thêm ở Sprint 3.)
   static const defaultSkills = [CardSkill.read, CardSkill.listen, CardSkill.tone];
+
+  /// Thêm từ vào bộ thẻ với kỹ năng phù hợp: mọi từ có thẻ đọc/nghe/thanh,
+  /// từ cần biết viết (mustWrite) có thêm thẻ viết.
+  Future<void> addWordsForStudy(Iterable<Word> words) async {
+    await addWords(words.map((w) => w.id));
+    await addWords(
+      words.where((w) => w.mustWrite).map((w) => w.id),
+      skills: const [CardSkill.write],
+    );
+  }
 
   // ------------------------------------------------------------ Bộ thẻ
 
@@ -73,7 +87,7 @@ class SrsRepository {
   Future<DeckStats> stats() async {
     final now = _now();
     final cards = await _db.select(_db.cards).get();
-    final today = await _today();
+    final today = await _stats.today();
     final limit = await _settings.dailyNewLimit();
     final eligible = _eligibleNew(cards, now);
     final remaining = (limit - today.newCards).clamp(0, limit);
@@ -107,7 +121,7 @@ class SrsRepository {
     var fresh = <CardRow>[];
     if (includeNew) {
       final limit = await _settings.dailyNewLimit();
-      final remaining = limit - (await _today()).newCards;
+      final remaining = limit - (await _stats.today()).newCards;
       if (remaining > 0) fresh = _eligibleNew(all, now).take(remaining).toList();
     }
 
@@ -191,8 +205,7 @@ class SrsRepository {
             reviewedAt: now,
             durationMs: Value(durationMs),
           ));
-      await _addDaily(
-        now,
+      await _stats.add(
         xp: xpFor(rating),
         reviews: 1,
         newCards: before.isNew ? 1 : 0,
@@ -203,7 +216,7 @@ class SrsRepository {
 
   /// Cộng số phút học vào thống kê ngày (gọi khi kết thúc phiên).
   Future<void> addStudyMinutes(int minutes) =>
-      minutes > 0 ? _addDaily(_now(), minutes: minutes) : Future.value();
+      minutes > 0 ? _stats.add(minutes: minutes) : Future.value();
 
   /// XP cho mỗi lượt ôn.
   static int xpFor(Rating r) => switch (r) {
@@ -212,40 +225,6 @@ class SrsRepository {
         Rating.good => 10,
         Rating.easy => 12,
       };
-
-  Future<void> _addDaily(
-    DateTime now, {
-    int xp = 0,
-    int reviews = 0,
-    int newCards = 0,
-    int minutes = 0,
-  }) {
-    final t = _db.dailyStats;
-    return _db.into(t).insert(
-          DailyStatsCompanion.insert(
-            date: dayKey(now),
-            xp: Value(xp),
-            reviews: Value(reviews),
-            newCards: Value(newCards),
-            minutes: Value(minutes),
-          ),
-          onConflict: DoUpdate(
-            (old) => DailyStatsCompanion.custom(
-              xp: old.xp + Constant(xp),
-              reviews: old.reviews + Constant(reviews),
-              newCards: old.newCards + Constant(newCards),
-              minutes: old.minutes + Constant(minutes),
-            ),
-          ),
-        );
-  }
-
-  Future<DailyStatRow> _today() async {
-    final key = dayKey(_now());
-    return await (_db.select(_db.dailyStats)..where((t) => t.date.equals(key)))
-            .getSingleOrNull() ??
-        DailyStatRow(date: key, xp: 0, reviews: 0, newCards: 0, minutes: 0);
-  }
 
   static SrsCard toCard(CardRow r) => SrsCard(
         id: r.id,
